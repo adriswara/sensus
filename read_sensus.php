@@ -6,36 +6,67 @@ if (!isset($_SESSION['login'])) {
     echo "<script>alert('Please login first :');window.location.replace('login.php');</script>";
 }
 ?>
-  <p><a href="add_rute.php"> Add rute</a></p>
+  <p><a href="add_sensus.php"> Add Sensus</a></p>
 
     <!-- table -->
     <table class="table">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Titik Awal</th>
-          <th scope="col">Titik Akhir</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Umur</th>
+          <th scope="col">Kelamin</th>
+          <th scope="col">Nomor Induk Kartu Keluarga</th>
+          <th scope="col">Alamat</th>
+          <th scope="col">RT</th>
+          <th scope="col">RW</th>
+          <th scope="col">NIK</th>
+          <th scope="col">Tanggal Lahir Warga</th>
+          <th scope="col">Tempat Lahir Warga</th>
+          <th scope="col">Agama</th>
+          <th scope="col">Status Perkawinan</th>
+          <th scope="col">Hubungan Keluarga</th>
+          <th scope="col">Pekerjaan Keluarga</th>
+          <th scope="col">Pendidikan</th>
+          <th scope="col">Kepemilikan Rumah</th>
+          <th scope="col">Keterangan</th>
           <th colspan="2" scope="col">Action</th>
         </tr>
       </thead>
 
       <?php
         include "connection.php";
-        $query = "SELECT * FROM rute join artikel on rute.fk_terminalA = artikel.id";
-        $rute = mysqli_query($db_connection, $query);
+        $query = "SELECT * FROM warga";
+        $warga = mysqli_query($db_connection, $query);
      
 
         $i= 1;
-        foreach ($rute as $data)  :
+        foreach ($warga as $data)  :
       ?>
 
       <tbody>
         <tr>
           <th scope="row"><?php echo $i++; ?></th>
-          <td><?php echo $data['nama']?></td>
-          <td><?php echo $data['fk_terminalB']?></td>
-          <td><a href="edit_rute.php?id=<?=$data['id_rute']?>"><button class="btn btn-outline-primary">Edit</button></a></td>
-          <td><a href="delete_rute.php?id=<?=$data['id_rute']?>"><button class="btn btn-outline-danger">Delete</button></a></td>
+          <td><?php echo $data['nama_warga']?></td>
+          <td><?php echo $data['umur_warga']?></td>
+          <td><?php echo $data['kelamin_warga']?></td>
+          <td><?php echo $data['kartuKeluarga_warga']?></td>
+          <td><?php echo $data['alamat_warga']?></td>
+          <td><?php echo $data['rt_warga']?></td>
+          <td><?php echo $data['rw_warga']?></td>
+          <td><?php echo $data['nik_warga']?></td>
+          <td><?php echo $data['tglLahir_warga']?></td>
+          <td><?php echo $data['tempatLahir_warga']?></td>
+          <td><?php echo $data['agama_warga']?></td>
+          <td><?php echo $data['statusPerkawinan_warga']?></td>
+          <td><?php echo $data['hubunganKeluarga_warga']?></td>
+          <td><?php echo $data['pekerjaanKeluarga_warga']?></td>
+          <td><?php echo $data['pendidikan_warga']?></td>
+          <td><?php echo $data['kepemilikanRumah_warga']?></td>
+          <td><?php echo $data['keterangan_warga']?></td>
+
+          <td><a href="edit_sensus.php?id_warga=<?=$data['id_warga']?>"><button class="btn btn-outline-primary">Edit</button></a></td>
+          <td><a href="delete_sensus.php?id_warga=<?=$data['id_warga']?>"><button class="btn btn-outline-danger">Delete</button></a></td>
         </tr>
       </tbody>
       <?php endforeach ?>

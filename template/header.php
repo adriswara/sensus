@@ -23,10 +23,10 @@
           <?php 
            session_start();
            if (isset($_SESSION['login'])) {
-            echo "<a class='navbar-brand' href=''>SISEMAR Yuk</a>";
+            echo "<a class='navbar-brand' href=''>SISEMAR </a>";
           }
           else if(!isset($_SESSION['login'])) {
-            echo "<a class='navbar-brand' href='index.html'>SISEMAR Yuk</a>";
+            echo "<a class='navbar-brand' href='index.html'>SISEMAR </a>";
           }
           ?>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">

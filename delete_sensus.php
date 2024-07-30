@@ -5,7 +5,7 @@ if (isset($_GET['id'])) {
 
 
 
-$query = "DELETE FROM rute WHERE id_rute = '$_GET[id]'";
+$query = "DELETE FROM rute WHERE id_warga = '$_GET[id]'";
 
 
 $delete = mysqli_query($db_connection ,$query);
@@ -22,5 +22,5 @@ $delete = mysqli_query($db_connection ,$query);
 ?>
 <!-- <p><a href="read_pet_220088.php">BACK TO PETS LIST</a></p> -->
 <script>
-window.location.replace("read_rute.php");
+window.location.replace("read_warga.php");
 </script>
