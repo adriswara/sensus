@@ -17,12 +17,12 @@ if (!isset($_SESSION['login'])) {
 
         <div class="col">
           <div class="card shadow-sm">
-          <a href="read_terminal.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/terminal.png"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img></a>
+          <a href="read_artikel.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/terminal.png"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img></a>
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <a href="read_terminal.php"><button type="button" class="btn btn-sm btn-outline-secondary">Terminal List</button></a>
+                <a href="read_artikel.php"><button type="button" class="btn btn-sm btn-outline-secondary">Artikel List</button></a>
                 </div>
               </div>
             </div>
@@ -30,12 +30,12 @@ if (!isset($_SESSION['login'])) {
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a href="read_rute.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/rute.png" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img></a>
+          <a href="read_sensus.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/rute.png" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img></a>
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <a href="read_rute.php"><button type="button" class="btn btn-sm btn-outline-secondary">Rute List</button></a>
+                <a href="read_sensus.php"><button type="button" class="btn btn-sm btn-outline-secondary">Sensus List</button></a>
                 </div>
               </div>
             </div>

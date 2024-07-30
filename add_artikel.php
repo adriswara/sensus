@@ -26,17 +26,23 @@ if (!isset($_SESSION['login'])) {
 
 <body>
     <h1>SISEMAR</h1>
-    <h3>Form Penambahan Rute</h3>
-    <form method="POST" action="create_rute.php">
+    <h3>Form Penambahan Artikel</h3>
+    <form method="POST" action="create_artikel.php">
         <table>
             <tr>
-                <td>Titik Start</td>
-                <td><input type="text" name="fk_terminalA" required></td>
+                <td>Judul</td>
+                <td><input type="text" name="judul_artikel" required></td>
             </tr>
             <tr>
-                <td>Tidik End</td>
-                <td><input type="text" name="fk_terminalB" required></td>
+                <td>Topik</td>
+                <td><input type="text" name="topik_artikel" required></td>
             </tr>
+            <tr>
+                <td>Isi</td>
+                <td><input type="text" name="isi_artikel" required></td>
+            </tr>
+
+
             <tr>
                 <td></td>
                 <td>
@@ -46,7 +52,7 @@ if (!isset($_SESSION['login'])) {
             </tr>
         </table>
     </form>
-    <p><a href="read_rute.php">CANCEL</a></p>
+    <p><a href="read_artikel.php">CANCEL</a></p>
 </body>
 
 </html>

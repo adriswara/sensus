@@ -21,7 +21,7 @@ if (!isset($_SESSION['login'])) {
 
       <?php
         include "connection.php";
-        $query = "SELECT * FROM rute join terminal on rute.fk_terminalA = terminal.id";
+        $query = "SELECT * FROM rute join artikel on rute.fk_terminalA = artikel.id";
         $rute = mysqli_query($db_connection, $query);
      
 

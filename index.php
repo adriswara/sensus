@@ -20,7 +20,7 @@
                   <option selected>Open this select menu</option>
                   <?php
                   include "connection.php";
-                  $query = "SELECT * FROM terminal";
+                  $query = "SELECT * FROM artikel";
                   $rute = mysqli_query($db_connection, $query);
 
                   $i= 1;
@@ -39,7 +39,7 @@
                 <option selected>Open this select menu</option>
                 <?php
                 include "connection.php";
-                $query = "SELECT * FROM terminal";
+                $query = "SELECT * FROM artikel";
                 $rute = mysqli_query($db_connection, $query);
 
                 $i= 1;

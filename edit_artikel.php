@@ -13,10 +13,9 @@ if (!isset($_SESSION['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SISEMAR</title>
+    <title>SISEMAR</title>
 </head>
-<!-- 
-<?php 
+<!-- <?php 
 //     session_start();
 //     if(!isset($_SESSION['login'])) {
 // 	    echo "<script>alert('Please Login First !');window.location.replace('index.php');</script>";
@@ -26,20 +25,28 @@ if (!isset($_SESSION['login'])) {
 
 <body>
     <h1>SISEMAR</h1>
-    <h3>Form Penambahan Terminal</h3>
-    <form method="POST" action="create_terminal.php">
+    <h3>Form Edit Artikel</h3>
+    <form method="POST" action="update_artikel.php">
+        <?php 
+              include "connection.php";
+              $querry = "SELECT * FROM artikel WHERE id_artikel='$_GET[id_artikel]'";
+              $pet=mysqli_query($db_connection,$querry);
+              $data=mysqli_fetch_assoc($pet);
+          ?>
+
+
         <table>
             <tr>
-                <td>Nama</td>
-                <td><input type="text" name="nama" required></td>
+                <td>Judul</td>
+                <td><input type="text" name="judul_artikel" value="<?= $data['judul_artikel']; ?>" required></td>
             </tr>
             <tr>
-                <td>Longitude</td>
-                <td><input type="text" name="longitude" required></td>
+                <td>Topik</td>
+                <td><input type="text" name="topik_artikel" value="<?= $data['topik_artikel']; ?>" required></td>
             </tr>
             <tr>
-                <td>Latitude</td>
-                <td><input type="text" name="latitude" required></td>
+                <td>Isi</td>
+                <td><input type="text" name="isi_artikel" value="<?= $data['isi_artikel']; ?>" required></td>
             </tr>
 
 
@@ -48,11 +55,12 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <input type="submit" name="save" value="SAVE">
                     <input type="reset" name="reset" value="RESET">
+                    <input type="hidden" name="id_artikel" value="<?=$data['id_artikel']?>">
                 </td>
             </tr>
         </table>
     </form>
-    <p><a href="read_terminal.php">CANCEL</a></p>
+    <p><a href="read_artikel.php">CANCEL</a></p>
 </body>
 
 </html>
