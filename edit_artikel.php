@@ -13,7 +13,7 @@ if (!isset($_SESSION['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISEMAR</title>
+    <title>SIPEKA</title>
 </head>
 <!-- <?php 
 //     session_start();
@@ -24,7 +24,7 @@ if (!isset($_SESSION['login'])) {
 
 
 <body>
-    <h1>SISEMAR</h1>
+    <h1>SIPEKA</h1>
     <h3>Form Edit Artikel</h3>
     <form method="POST" action="update_artikel.php">
         <?php 

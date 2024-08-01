@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
 	  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     <!-- end leaflet -->
-    <title>SISEMAR</title>
+    <title>SIPEKA</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 </head>
@@ -23,10 +23,10 @@
           <?php 
            session_start();
            if (isset($_SESSION['login'])) {
-            echo "<a class='navbar-brand' href=''>SISEMAR </a>";
+            echo "<a class='navbar-brand' href=''>SIPEKA </a>";
           }
           else if(!isset($_SESSION['login'])) {
-            echo "<a class='navbar-brand' href='index.html'>SISEMAR </a>";
+            echo "<a class='navbar-brand' href='index.html'>SIPEKA </a>";
           }
           ?>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
