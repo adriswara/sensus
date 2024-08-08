@@ -175,75 +175,150 @@
 
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button-->
-                <button type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                    aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="absolute -inset-0.5"></span>
-                    <span class="sr-only">Open main menu</span>
-                    <!--
-            Icon when menu is closed.
+            <!-- leave it blank -->
+        </div>
+    </div>
 
-            Menu open: "hidden", Menu closed: "block"
-          -->
-                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <!--
-            Icon when menu is open.
+</nav>
 
-            Menu open: "block", Menu closed: "hidden"
-          -->
-                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex flex-shrink-0 items-center">
-                    <!--  -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
+
+
+    <div class="col">
+        <div class="card shadow-sm">
+            <a href="read_artikel.php">
+            </a>
+            <div class="card-body">
+                <p class="card-text"> Total Kelahiran </p>
+                <div class="d-flex justify-content-between align-items-center">
                     <?php
-                    session_start();
-                    if (isset($_SESSION['login'])) {
-                        echo "<a href='index.php'> <h1 class='text-4xl text-white'>SIPEKA</h1> </a>";
-                    } else if (!isset($_SESSION['login'])) {
-                        echo "<a href='index.php'> <h1 class='text-4xl text-white'>SIPEKA</h1> </a>";
-                    }
-                    ?>
-                    <!--  -->
-                </div>
-                <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4">
-                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="index.php" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                            aria-current="page">Beranda</a>
-                        <a href="#"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                        <a href="#"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                        <a href="#"
-                            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-                    </div>
+
+                    include "connection.php";
+                    $queryLahir = " SELECT COUNT(id_warga) as angkaLahir FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) ";
+                    $kelahiran = mysqli_query($db_connection, $queryLahir);
+
+                    $i = 1;
+                    foreach ($kelahiran as $data):
+                        ?>
+                        <p><?php echo $data['angkaLahir'] ?></p>
+                    <?php endforeach ?>
+
                 </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">  
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-sm">
+            <a href="read_sensus.php">
+            </a>
+            <div class="card-body">
+                <p class="card-text">Total UMKM</p>
+                <div class="d-flex justify-content-between align-items-center">
+
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state. -->
-   
-</nav>
+
+    <div class="col">
+        <div class="card shadow-sm">
+            <a href="read_admin.php">
+            </a>
+            <div class="card-body">
+                <p class="card-text">Total JIWA</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 mt-5">
+
+
+    <div class="col">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <p class="card-text"> Jiwa Per RW </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-sm">
+            <a href="read_sensus.php">
+            </a>
+            <div class="card-body">
+                <p class="card-text">Angka Total Kelahiran</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
 
 </body>
 
 <script>
+    // 
+    const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    const yValues = [55, 49, 44, 24, 15];
+    const barColors = ["red", "green", "blue", "orange", "brown"];
 
+    new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: " Sensus "
+            }
+        }
+    });
+    // 
+    const xValues2 = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
+    new Chart("myChart2", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+                borderColor: "red",
+                fill: false
+            }, {
+                data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+                borderColor: "green",
+                fill: false
+            }, {
+                data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                borderColor: "blue",
+                fill: false
+            }]
+        },
+        options: {
+            legend: { display: false }
+        }
+    });
+    // 
 </script>
 
 </html>
