@@ -1,10 +1,9 @@
-<?php include "session.php"; ?>
-<?php include "header.php"; ?>
+<?php include "template/header.php"; ?>
 
-<h3>Change Asset Photo</h3>
+<h3>Change Artikel Photo</h3>
 <?php 
     include "connection.php";
-    $query = "SELECT * FROM asset_artikel WHERE id_asset='$_GET[id]'";
+    $query = "SELECT * FROM artikel WHERE id_artikel='$_GET[id]'";
     $pet=mysqli_query($db_connection,$query);
     $data=mysqli_fetch_assoc($pet);
     ?>
@@ -21,13 +20,13 @@
             <td>&nbsp;
                 <input type="submit" name="upload" value="UPLOAD" />
                 <input type="hidden" name="display_artikel" value="<?= $data['display_artikel'];?>" />
-                <input type="hidden" name="id_asset" value="<?= $data['id_asset']; ?>" />
+                <input type="hidden" name="id_artikel" value="<?= $data['id_artikel']; ?>" />
             </td>
         </tr>
         </tr>
         </tr>
     </table>
 </form>
-<p><a href="read_asset.php">CANCEL</a></p>
+<p><a href="read_artikel.php">CANCEL</a></p>
 
 <?php include "footer.php"; ?>
