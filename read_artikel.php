@@ -36,6 +36,7 @@ if (!isset($_SESSION['login'])) {
           <td><?php echo $data['judul_artikel']?></td>
           <td><?php echo $data['topik_artikel']?></td>
           <td><?php echo $data['isi_artikel']?></td>
+          <td><?php echo $data['tanggal_artikel']?></td>
           <td><a href="edit_artikel.php?id_artikel=<?=$data['id_artikel']?>"><button class="btn btn-outline-primary">Edit</button></a></td>
           <td><a href="delete_artikel.php?id_artikel=<?=$data['id_artikel']?>"><button class="btn btn-outline-danger">Delete</button></a></td>
         </tr>
