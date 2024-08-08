@@ -192,17 +192,14 @@
                 <p class="card-text"> Total Kelahiran </p>
                 <div class="d-flex justify-content-between align-items-center">
                     <?php
-
                     include "connection.php";
                     $queryLahir = " SELECT COUNT(id_warga) as angkaLahir FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) ";
                     $kelahiran = mysqli_query($db_connection, $queryLahir);
-
                     $i = 1;
                     foreach ($kelahiran as $data):
                         ?>
                         <p><?php echo $data['angkaLahir'] ?></p>
                     <?php endforeach ?>
-
                 </div>
             </div>
         </div>
@@ -214,7 +211,15 @@
             <div class="card-body">
                 <p class="card-text">Total UMKM</p>
                 <div class="d-flex justify-content-between align-items-center">
-
+                    <?php
+                    include "connection.php";
+                    $queryUMKM = "  SELECT COUNT(id_warga) as angkaUMKM FROM `warga` WHERE pekerjaanKeluarga_warga like '%umkm%'; ";
+                    $umkm = mysqli_query($db_connection, $queryUMKM);
+                    $i = 1;
+                    foreach ($umkm as $data):
+                        ?>
+                        <p><?php echo $data['angkaUMKM'] ?></p>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
@@ -228,12 +233,20 @@
             <div class="card-body">
                 <p class="card-text">Total JIWA</p>
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
+                    <?php
+                    include "connection.php";
+                    $queryJiwa = "  SELECT COUNT(id_warga) as angkaJiwa FROM `warga`";
+                    $jiwa = mysqli_query($db_connection, $queryJiwa);
+                    $i = 1;
+                    foreach ($jiwa as $data):
+                        ?>
+                        <p><?php echo $data['angkaJiwa'] ?></p>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 </div>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 mt-5">
