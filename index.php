@@ -60,8 +60,8 @@
                     <rect width="100%" height="100%" fill="#55595c" /></img>
                 </a>
                 <div class="card-body">
-                    <p class="card-text"> <?php echo $data['topik_artikel'] ?>     <?php echo $data['judul_artikel'] ?> </p>
-                    <p class="card-text"> <?php echo $data['isi_artikel'] ?></p>
+                    <p class="card-text"> <?php echo $data['topik_artikel'] ?></p>
+                    <p class="card-text"> <?php echo $data['judul_artikel'] ?></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a href="read_artikel.php"><button type="button" class="btn btn-sm btn-outline-secondary"> Baca
@@ -236,7 +236,7 @@ $dataRW15 = mysqli_query($db_connection, $queryRW15);
 // FORW1
 foreach ($dataRW1 as $data):
     ?>
-    <p><?php echo $data['totalRW1'] ?></p>
+    <p id="idRW1"><?php echo $data['totalRW1'] ?></p>
     </div>
 <?php endforeach ?>
 
@@ -244,109 +244,137 @@ foreach ($dataRW1 as $data):
 <?php
 foreach ($dataRW2 as $data):
     ?>
-    <p><?php echo $data['totalRW2'] ?></p>
+    <p id="idRW2"><?php echo $data['totalRW2'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW3 -->
 <?php
 foreach ($dataRW3 as $data):
     ?>
-    <p><?php echo $data['totalRW3'] ?></p>
+    <p id="idRW3"><?php echo $data['totalRW3'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW4 -->
 <?php
 foreach ($dataRW4 as $data):
     ?>
-    <p><?php echo $data['totalRW4'] ?></p>
+    <p id="idRW4"><?php echo $data['totalRW4'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW5 -->
 <?php
 foreach ($dataRW5 as $data):
     ?>
-    <p><?php echo $data['totalRW5'] ?></p>
+    <p id="idRW5"><?php echo $data['totalRW5'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW6 -->
 <?php
 foreach ($dataRW6 as $data):
     ?>
-    <p><?php echo $data['totalRW6'] ?></p>
+    <p id="idRW6"><?php echo $data['totalRW6'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW7 -->
 <?php
 foreach ($dataRW7 as $data):
     ?>
-    <p><?php echo $data['totalRW7'] ?></p>
+    <p id="idRW7"><?php echo $data['totalRW7'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW8 -->
 <?php
 foreach ($dataRW8 as $data):
     ?>
-    <p><?php echo $data['totalRW8'] ?></p>
+    <p id="idRW8"><?php echo $data['totalRW8'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW9 -->
 <?php
 foreach ($dataRW9 as $data):
     ?>
-    <p><?php echo $data['totalRW9'] ?></p>
+    <p id="idRW9"><?php echo $data['totalRW9'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW10 -->
 <?php
 foreach ($dataRW10 as $data):
     ?>
-    <p><?php echo $data['totalRW10'] ?></p>
+    <p id="idRW10"><?php echo $data['totalRW10'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW11 -->
 <?php
 foreach ($dataRW11 as $data):
     ?>
-    <p><?php echo $data['totalRW11'] ?></p>
+    <p id="idRW11"><?php echo $data['totalRW11'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW12 -->
 <?php
 foreach ($dataRW12 as $data):
     ?>
-    <p><?php echo $data['totalRW12'] ?></p>
+    <p id="idRW12"><?php echo $data['totalRW12'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW13 -->
 <?php
 foreach ($dataRW13 as $data):
     ?>
-    <p><?php echo $data['totalRW13'] ?></p>
+    <p id="idRW13"><?php echo $data['totalRW13'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW14 -->
 <?php
 foreach ($dataRW14 as $data):
     ?>
-    <p><?php echo $data['totalRW14'] ?></p>
+    <p id="idRW14"><?php echo $data['totalRW14'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW15 -->
 <?php
 foreach ($dataRW15 as $data):
     ?>
-    <p><?php echo $data['totalRW15'] ?></p>
+    <p id="idRW15"><?php echo $data['totalRW15'] ?></p>
     </div>
 <?php endforeach ?>
 
+<!--  -->
+<?php
+include "connection.php";
+$queryLahir = " SELECT COUNT(id_warga) as angkaLahir FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(2010) ";
+$kelahiran = mysqli_query($db_connection, $queryLahir);
+$i = 1;
+foreach ($kelahiran as $data):
+    ?>
+    <p><?php echo $data['angkaLahir'] ?></p>
+<?php endforeach ?>
+<!--  -->
 
 </body>
 
 <script>
     // 
+    var RW1 = document.getElementById('idRW1').value;
+    var RW2 = document.getElementById('idRW2').value;
+    var RW3 = document.getElementById('idRW3').value;
+    var RW4 = document.getElementById('idRW4').value;
+    var RW5 = document.getElementById('idRW5').value;
+    var RW6 = document.getElementById('idRW6').value;
+    var RW7 = document.getElementById('idRW7').value;
+    var RW8 = document.getElementById('idRW8').value;
+    var RW9 = document.getElementById('idRW9').value;
+    var RW10 = document.getElementById('idRW10').value;
+    var RW11 = document.getElementById('idRW11').value;
+    var RW12 = document.getElementById('idRW12').value;
+    var RW13 = document.getElementById('idRW13').value;
+    var RW14 = document.getElementById('idRW14').value;
+    var RW15 = document.getElementById('idRW15').value;
+
+    // 
     const xValues = ["RW 1", "RW 2", "RW 3", "RW 4", "RW 5", "RW 6", "RW 7", "RW 8", "RW 9", "RW 10", "RW 11", "RW 12", "RW 13", "RW 14", "RW 15"];
-    const yValues = [55, 49, 44, 24, 15];
-    const barColors = ["red", "green", "blue", "orange", "brown"];
+    const yValues = [RW1, RW2, RW3, RW4, RW5, RW6, RW7, RW8, RW9, RW10, RW11, RW12, RW13, RW14, RW15];
+    const barColors = ["red", "green", "blue", "orange", "brown", "pink", "purple", "black", "olive", "cyan", "grey", "maroon", "yellow", "magenta", "sand"];
 
     new Chart("myChart", {
         type: "bar",
@@ -366,7 +394,10 @@ foreach ($dataRW15 as $data):
         }
     });
     // 
-    const xValues2 = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+
+    // 
+    const xValues2 = [RW1, RW2, RW3, RW4, RW5, RW6, RW7, RW8, RW9, RW10, RW11, RW12, RW13, RW14, RW15];
 
     new Chart("myChart2", {
         type: "line",
@@ -374,15 +405,7 @@ foreach ($dataRW15 as $data):
             labels: xValues,
             datasets: [{
                 data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
-                borderColor: "red",
-                fill: false
-            }, {
-                data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
                 borderColor: "green",
-                fill: false
-            }, {
-                data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
-                borderColor: "blue",
                 fill: false
             }]
         },
@@ -392,5 +415,6 @@ foreach ($dataRW15 as $data):
     });
     // 
 </script>
+<!-- max tahun ke tahun per 10 tahun -->
 
 </html>
