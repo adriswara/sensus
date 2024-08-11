@@ -378,90 +378,100 @@ $kelahiranMin10 = mysqli_query($db_connection, $queryLahirMin10);
 // FOR Y = NOW 
 foreach ($kelahiranNow as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirNow'] ?></p>
+    <p id="idTahunMin0"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirNow"> <?php echo $data['angkaLahirNow'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 1 -->
 <?php
 foreach ($kelahiranMin1 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin1'] ?></p>
+    <p id="idTahunMin1"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin1"> <?php echo $data['angkaLahirMin1'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 2 -->
 <?php
 foreach ($kelahiranMin2 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin2'] ?></p>
+    <p id="idTahunMin2"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin2"> <?php echo $data['angkaLahirMin2'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 3 -->
 <?php
 foreach ($kelahiranMin3 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin3'] ?></p>
+    <p id="idTahunMin3"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin3"> <?php echo $data['angkaLahirMin3'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 4 -->
 <?php
 foreach ($kelahiranMin4 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin4'] ?></p>
+    <p id="idTahunMin4"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin4"> <?php echo $data['angkaLahirMin4'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 5 -->
 <?php
 foreach ($kelahiranMin5 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin5'] ?></p>
+    <p id="idTahunMin5"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin5"> <?php echo $data['angkaLahirMin5'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 6 -->
 <?php
 foreach ($kelahiranMin6 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin6'] ?></p>
+    <p id="idTahunMin6"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin6"> <?php echo $data['angkaLahirMin6'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 7 -->
 <?php
 foreach ($kelahiranMin7 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin7'] ?></p>
+    <p id="idTahunMin7"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin7"> <?php echo $data['angkaLahirMin7'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 8 -->
 <?php
 foreach ($kelahiranMin8 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin8'] ?></p>
+    <p id="idTahunMin8"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin8"> <?php echo $data['angkaLahirMin8'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 9 -->
 <?php
 foreach ($kelahiranMin9 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin9'] ?></p>
+    <p id="idTahunMin9"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin9"> <?php echo $data['angkaLahirMin9'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 10 -->
 <?php
 foreach ($kelahiranMin10 as $data):
     ?>
-    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin10'] ?></p>
+    <p id="idTahunMin10"><?php echo $data['tahun'] ?> </p>
+    <p id="idLahirMin10"> <?php echo $data['angkaLahirMin10'] ?></p>
 <?php endforeach ?>
 <!--  -->
 </body>
 
 <script>
-    // 
-    var RW1 = document.getElementById('idRW1').value;
-    var RW2 = document.getElementById('idRW2').value;
-    var RW3 = document.getElementById('idRW3').value;
-    var RW4 = document.getElementById('idRW4').value;
-    var RW5 = document.getElementById('idRW5').value;
-    var RW6 = document.getElementById('idRW6').value;
-    var RW7 = document.getElementById('idRW7').value;
-    var RW8 = document.getElementById('idRW8').value;
-    var RW9 = document.getElementById('idRW9').value;
-    var RW10 = document.getElementById('idRW10').value;
-    var RW11 = document.getElementById('idRW11').value;
-    var RW12 = document.getElementById('idRW12').value;
-    var RW13 = document.getElementById('idRW13').value;
-    var RW14 = document.getElementById('idRW14').value;
-    var RW15 = document.getElementById('idRW15').value;
-
-    // 
+    // get data jiwa RW
+    var RW1 = document.getElementById('idRW1').innerHTML;
+    var RW2 = document.getElementById('idRW2').innerHTML;
+    var RW3 = document.getElementById('idRW3').innerHTML;
+    var RW4 = document.getElementById('idRW4').innerHTML;
+    var RW5 = document.getElementById('idRW5').innerHTML;
+    var RW6 = document.getElementById('idRW6').innerHTML;
+    var RW7 = document.getElementById('idRW7').innerHTML;
+    var RW8 = document.getElementById('idRW8').innerHTML;
+    var RW9 = document.getElementById('idRW9').innerHTML;
+    var RW10 = document.getElementById('idRW10').innerHTML;
+    var RW11 = document.getElementById('idRW11').innerHTML;
+    var RW12 = document.getElementById('idRW12').innerHTML;
+    var RW13 = document.getElementById('idRW13').innerHTML;
+    var RW14 = document.getElementById('idRW14').innerHTML;
+    var RW15 = document.getElementById('idRW15').innerHTML;
+    // chart jiwa per rw
     const xValues = ["RW 1", "RW 2", "RW 3", "RW 4", "RW 5", "RW 6", "RW 7", "RW 8", "RW 9", "RW 10", "RW 11", "RW 12", "RW 13", "RW 14", "RW 15"];
     const yValues = [RW1, RW2, RW3, RW4, RW5, RW6, RW7, RW8, RW9, RW10, RW11, RW12, RW13, RW14, RW15];
     const barColors = ["red", "green", "blue", "orange", "brown", "pink", "purple", "black", "olive", "cyan", "grey", "maroon", "yellow", "magenta", "sand"];
@@ -483,18 +493,40 @@ foreach ($kelahiranMin10 as $data):
             }
         }
     });
-    // 
-
-
-    // 
-    const xValues2 = [RW1, RW2, RW3, RW4, RW5, RW6, RW7, RW8, RW9, RW10, RW11, RW12, RW13, RW14, RW15];
+    //  end chart
+    // get data lahir per 10 tahun
+    var jiwaMin0 = document.getElementById('idLahirNow').innerHTML;
+    var jiwaMin1 = document.getElementById('idLahirMin1').innerHTML;
+    var jiwaMin2 = document.getElementById('idLahirMin2').innerHTML;
+    var jiwaMin3 = document.getElementById('idLahirMin3').innerHTML;
+    var jiwaMin4 = document.getElementById('idLahirMin4').innerHTML;
+    var jiwaMin5 = document.getElementById('idLahirMin5').innerHTML;
+    var jiwaMin6 = document.getElementById('idLahirMin6').innerHTML;
+    var jiwaMin7 = document.getElementById('idLahirMin7').innerHTML;
+    var jiwaMin8 = document.getElementById('idLahirMin8').innerHTML;
+    var jiwaMin9 = document.getElementById('idLahirMin9').innerHTML;
+    var jiwaMin10 = document.getElementById('idLahirMin10').innerHTML;
+    // angka lahir
+    var lahirMin0 = document.getElementById('idTahunMin0').innerHTML;
+    var lahirMin1 = document.getElementById('idTahunMin1').innerHTML;
+    var lahirMin2 = document.getElementById('idTahunMin2').innerHTML;
+    var lahirMin3 = document.getElementById('idTahunMin3').innerHTML;
+    var lahirMin4 = document.getElementById('idTahunMin4').innerHTML;
+    var lahirMin5 = document.getElementById('idTahunMin5').innerHTML;
+    var lahirMin6 = document.getElementById('idTahunMin6').innerHTML;
+    var lahirMin7 = document.getElementById('idTahunMin7').innerHTML;
+    var lahirMin8 = document.getElementById('idTahunMin8').innerHTML;
+    var lahirMin9 = document.getElementById('idTahunMin9').innerHTML;
+    var lahirMin10 = document.getElementById('idTahunMin10').innerHTML;
+    // chart kelahiran per 10 tahun
+    const xValues2 = [lahirMin0, lahirMin1, lahirMin2, lahirMin3, lahirMin4, lahirMin5, lahirMin6, lahirMin7, lahirMin8, lahirMin9, lahirMin10];
 
     new Chart("myChart2", {
         type: "line",
         data: {
-            labels: xValues,
+            labels: xValues2,
             datasets: [{
-                data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+                data: [jiwaMin0, jiwaMin1, jiwaMin2, jiwaMin3, jiwaMin4, jiwaMin5, jiwaMin6, jiwaMin7, jiwaMin8, jiwaMin9, jiwaMin10],
                 borderColor: "green",
                 fill: false
             }]
