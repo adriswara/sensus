@@ -188,49 +188,49 @@
 <?php
 include "connection.php";
 // RW1
-$queryRW1 = " select count(id_warga) as totalRW1 from warga where rw_warga = 1; ";
+$queryRW1 = " SELECT count(id_warga) as totalRW1 from warga where rw_warga = 1; ";
 $dataRW1 = mysqli_query($db_connection, $queryRW1);
 // RW2
-$queryRW2 = " select count(id_warga) as totalRW2 from warga where rw_warga = 2; ";
+$queryRW2 = " SELECT count(id_warga) as totalRW2 from warga where rw_warga = 2; ";
 $dataRW2 = mysqli_query($db_connection, $queryRW2);
 // RW3
-$queryRW3 = " select count(id_warga) as totalRW3 from warga where rw_warga = 3; ";
+$queryRW3 = " SELECT count(id_warga) as totalRW3 from warga where rw_warga = 3; ";
 $dataRW3 = mysqli_query($db_connection, $queryRW3);
 // RW4
-$queryRW4 = " select count(id_warga) as totalRW4 from warga where rw_warga = 4; ";
+$queryRW4 = " SELECT count(id_warga) as totalRW4 from warga where rw_warga = 4; ";
 $dataRW4 = mysqli_query($db_connection, $queryRW4);
 // RW5
-$queryRW5 = " select count(id_warga) as totalRW5 from warga where rw_warga = 5; ";
+$queryRW5 = " SELECT count(id_warga) as totalRW5 from warga where rw_warga = 5; ";
 $dataRW5 = mysqli_query($db_connection, $queryRW5);
 // RW6
-$queryRW6 = " select count(id_warga) as totalRW6 from warga where rw_warga = 6; ";
+$queryRW6 = " SELECT count(id_warga) as totalRW6 from warga where rw_warga = 6; ";
 $dataRW6 = mysqli_query($db_connection, $queryRW6);
 // RW7
-$queryRW7 = " select count(id_warga) as totalRW7 from warga where rw_warga = 7; ";
+$queryRW7 = " SELECT count(id_warga) as totalRW7 from warga where rw_warga = 7; ";
 $dataRW7 = mysqli_query($db_connection, $queryRW7);
 // RW8
-$queryRW8 = " select count(id_warga) as totalRW8 from warga where rw_warga = 8; ";
+$queryRW8 = " SELECT count(id_warga) as totalRW8 from warga where rw_warga = 8; ";
 $dataRW8 = mysqli_query($db_connection, $queryRW8);
 // RW9
-$queryRW9 = " select count(id_warga) as totalRW9 from warga where rw_warga = 9; ";
+$queryRW9 = " SELECT count(id_warga) as totalRW9 from warga where rw_warga = 9; ";
 $dataRW9 = mysqli_query($db_connection, $queryRW9);
 // RW10
-$queryRW10 = " select count(id_warga) as totalRW10 from warga where rw_warga = 10; ";
+$queryRW10 = " SELECT count(id_warga) as totalRW10 from warga where rw_warga = 10; ";
 $dataRW10 = mysqli_query($db_connection, $queryRW10);
 // RW11
-$queryRW11 = " select count(id_warga) as totalRW11 from warga where rw_warga = 11; ";
+$queryRW11 = " SELECT count(id_warga) as totalRW11 from warga where rw_warga = 11; ";
 $dataRW11 = mysqli_query($db_connection, $queryRW11);
 // RW12
-$queryRW12 = " select count(id_warga) as totalRW12 from warga where rw_warga = 12; ";
+$queryRW12 = " SELECT count(id_warga) as totalRW12 from warga where rw_warga = 12; ";
 $dataRW12 = mysqli_query($db_connection, $queryRW12);
 // RW13
-$queryRW13 = " select count(id_warga) as totalRW13 from warga where rw_warga = 13; ";
+$queryRW13 = " SELECT count(id_warga) as totalRW13 from warga where rw_warga = 13; ";
 $dataRW13 = mysqli_query($db_connection, $queryRW13);
 // RW14
-$queryRW14 = " select count(id_warga) as totalRW14 from warga where rw_warga = 14; ";
+$queryRW14 = " SELECT count(id_warga) as totalRW14 from warga where rw_warga = 14; ";
 $dataRW14 = mysqli_query($db_connection, $queryRW14);
 // RW15
-$queryRW15 = " select count(id_warga) as totalRW15 from warga where rw_warga = 15; ";
+$queryRW15 = " SELECT count(id_warga) as totalRW15 from warga where rw_warga = 15; ";
 $dataRW15 = mysqli_query($db_connection, $queryRW15);
 // RW END
 // FORW1
@@ -342,15 +342,105 @@ foreach ($dataRW15 as $data):
 <!--  -->
 <?php
 include "connection.php";
-$queryLahir = " SELECT COUNT(id_warga) as angkaLahir FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(2010) ";
-$kelahiran = mysqli_query($db_connection, $queryLahir);
-$i = 1;
-foreach ($kelahiran as $data):
+// YEAR = NOW
+$queryLahirNow = " SELECT COUNT(id_warga) as angkaLahirNow , YEAR(CURRENT_DATE) as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) ";
+$kelahiranNow = mysqli_query($db_connection, $queryLahirNow);
+// YEAR = NOW - 1
+$queryLahirMin1 = " SELECT COUNT(id_warga) as angkaLahirMin1 , YEAR(CURRENT_DATE) - 1 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 1 ";
+$kelahiranMin1 = mysqli_query($db_connection, $queryLahirMin1);
+// YEAR = NOW - 2
+$queryLahirMin2 = " SELECT COUNT(id_warga) as angkaLahirMin2 , YEAR(CURRENT_DATE) - 2 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 2 ";
+$kelahiranMin2 = mysqli_query($db_connection, $queryLahirMin2);
+// YEAR = NOW - 3
+$queryLahirMin3 = " SELECT COUNT(id_warga) as angkaLahirMin3 , YEAR(CURRENT_DATE) - 3 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 3 ";
+$kelahiranMin3 = mysqli_query($db_connection, $queryLahirMin3);
+// YEAR = NOW - 4
+$queryLahirMin4 = " SELECT COUNT(id_warga) as angkaLahirMin4 , YEAR(CURRENT_DATE) - 4 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 4 ";
+$kelahiranMin4 = mysqli_query($db_connection, $queryLahirMin4);
+// YEAR = NOW - 5
+$queryLahirMin5 = " SELECT COUNT(id_warga) as angkaLahirMin5 , YEAR(CURRENT_DATE) - 5 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 5 ";
+$kelahiranMin5 = mysqli_query($db_connection, $queryLahirMin5);
+// YEAR = NOW - 6
+$queryLahirMin6 = " SELECT COUNT(id_warga) as angkaLahirMin6 , YEAR(CURRENT_DATE) - 6 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 6 ";
+$kelahiranMin6 = mysqli_query($db_connection, $queryLahirMin6);
+// YEAR = NOW - 7
+$queryLahirMin7 = " SELECT COUNT(id_warga) as angkaLahirMin7 , YEAR(CURRENT_DATE) - 7 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 7 ";
+$kelahiranMin7 = mysqli_query($db_connection, $queryLahirMin7);
+// YEAR = NOW - 8
+$queryLahirMin8 = " SELECT COUNT(id_warga) as angkaLahirMin8 , YEAR(CURRENT_DATE) - 8 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 8 ";
+$kelahiranMin8 = mysqli_query($db_connection, $queryLahirMin8);
+// YEAR = NOW - 9
+$queryLahirMin9 = " SELECT COUNT(id_warga) as angkaLahirMin9 , YEAR(CURRENT_DATE) - 9 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 9 ";
+$kelahiranMin9 = mysqli_query($db_connection, $queryLahirMin9);
+// YEAR = NOW - 10
+$queryLahirMin10 = " SELECT COUNT(id_warga) as angkaLahirMin10 , YEAR(CURRENT_DATE) - 10 as tahun FROM `warga` WHERE YEAR(tglLahir_warga) = YEAR(CURRENT_DATE) - 10";
+$kelahiranMin10 = mysqli_query($db_connection, $queryLahirMin10);
+// FOR Y = NOW 
+foreach ($kelahiranNow as $data):
     ?>
-    <p><?php echo $data['angkaLahir'] ?></p>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirNow'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 1 -->
+<?php
+foreach ($kelahiranMin1 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin1'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 2 -->
+<?php
+foreach ($kelahiranMin2 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin2'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 3 -->
+<?php
+foreach ($kelahiranMin3 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin3'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 4 -->
+<?php
+foreach ($kelahiranMin4 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin4'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 5 -->
+<?php
+foreach ($kelahiranMin5 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin5'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 6 -->
+<?php
+foreach ($kelahiranMin6 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin6'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 7 -->
+<?php
+foreach ($kelahiranMin7 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin7'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 8 -->
+<?php
+foreach ($kelahiranMin8 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin8'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 9 -->
+<?php
+foreach ($kelahiranMin9 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin9'] ?></p>
+<?php endforeach ?>
+<!-- FOR Y - 10 -->
+<?php
+foreach ($kelahiranMin10 as $data):
+    ?>
+    <p>LAHIRAN <?php echo $data['tahun'] ?>     <?php echo $data['angkaLahirMin10'] ?></p>
 <?php endforeach ?>
 <!--  -->
-
 </body>
 
 <script>
