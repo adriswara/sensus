@@ -55,9 +55,7 @@
         <!--  -->
         <div class="col">
             <div class="card shadow-sm">
-                <a href="read_artikel.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        src="img/<?= $data['display_artikel']; ?>" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#55595c" /></img>
+                <a href="read_artikel.php"> <img class="object-fit-cover" width="100%" height="100%" src="img/<?= $data['display_artikel']; ?>"></img>
                 </a>
                 <div class="card-body">
                     <p class="card-text"> <?php echo $data['topik_artikel'] ?></p>

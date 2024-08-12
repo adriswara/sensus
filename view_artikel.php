@@ -89,7 +89,7 @@ if (!isset($_SESSION['login'])) {
             </tr>
         </table>
 
-    <p><a href="read_artikel.php">Kembali</a></p>
+    <p><a href="index.php">Kembali</a></p>
 </body>
 
 </html>
