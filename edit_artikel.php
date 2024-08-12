@@ -48,7 +48,7 @@ if (!isset($_SESSION['login'])) {
             </tr>
             <tr>
                 <!-- <td>Isi</td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="area" name="isi_artikel" value="<?= $data['isi_artikel']; ?>" required></td> -->
+                <td><input class="" style="border-width: 1px; border-color: black;" type="area" name="isi_artikel" value="" required></td> -->
                 <br>
                 <p><label for="w3review">Review of W3Schools:</label></p>
                 <textarea  style="border-width: 1px; border-color: black;"  name="isi_artikel" rows="4"

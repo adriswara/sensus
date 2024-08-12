@@ -64,7 +64,7 @@
                     <p class="card-text"> <?php echo $data['judul_artikel'] ?></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <a href="read_artikel.php"><button type="button" class="btn btn-sm btn-outline-secondary"> Baca
+                            <a href="view_artikel.php?id_artikel=<?=$data['id_artikel']?>"><button type="button" class="btn btn-sm btn-outline-secondary"> Baca
                                 </button></a>
                         </div>
                     </div>
