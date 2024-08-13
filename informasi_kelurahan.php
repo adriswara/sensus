@@ -61,31 +61,69 @@
         .bindPopup('Kantor Kelurahan Wargamekar')
         .openPopup();
     // RW1
+    L.marker([-7.022515, 107.667668]).addTo(map)
+        .bindPopup('RW1')
+        .openPopup();
     // RW2
+    L.marker([-7.025409, 107.670953]).addTo(map)
+        .bindPopup('RW2')
+        .openPopup();
     // RW3
+    L.marker([-7.026636, 107.668800]).addTo(map)
+        .bindPopup('RW3')
+        .openPopup();
     // RW4
+    L.marker([-7.027283, 107.669641]).addTo(map)
+        .bindPopup('RW4')
+        .openPopup();
     // RW5
+    L.marker([-7.029405, 107.671524]).addTo(map)
+        .bindPopup('RW5')
+        .openPopup();
     // RW6
-    L.marker([-7.037504302728691, 107.66919696978816]).addTo(map)
+    L.marker([-7.037421602265014, 107.669148740685]).addTo(map)
         .bindPopup('RW6')
         .openPopup();
     // RW7
+    L.marker([-7.029099, 107.6762746]).addTo(map)
+        .bindPopup('RW7')
+        .openPopup();
     // RW8
+    L.marker([-7.029133, 107.677075]).addTo(map)
+        .bindPopup('RW8')
+        .openPopup();
     // RW9
-    // -7.0244838,107.6748297,
-    L.marker([-7.0244838,107.6748297]).addTo(map)
+    L.marker([-7.024484, 107.677405]).addTo(map)
         .bindPopup('RW9')
         .openPopup();
     // RW10
-    L.marker([-7.020935708973771, 107.67185772112744]).addTo(map)
+    L.marker([-7.0215664470139, 107.67739921563283]).addTo(map)
         .bindPopup('RW10')
         .openPopup();
     // RW11
-    // RW12
+    L.marker([-7.021624, 107.673272]).addTo(map)
+        .bindPopup('RW11')
+        .openPopup();
+    // RW12 
+    L.marker([-7.001523, 107.683114]).addTo(map)
+        .bindPopup('RW12')
+        .openPopup();
     // RW13
+    L.marker([-7.002671, 107.677152]).addTo(map)
+        .bindPopup('RW13')
+        .openPopup();
     // RW14
+    L.marker([-7.027483, 107.671844]).addTo(map)
+        .bindPopup('RW14')
+        .openPopup();
     // RW15
+    L.marker([-7.020914, 107.674138]).addTo(map)
+        .bindPopup('RW15')
+        .openPopup();
     // RW16
+    L.marker([-7.044711, 107.668195]).addTo(map)
+        .bindPopup('RW16')
+        .openPopup();
 </script>
 
 </html>

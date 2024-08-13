@@ -132,4 +132,6 @@ if (!isset($_SESSION['login'])) {
 <!-- table -->
 </body>
 
+<?php include "template/footer.php" ?>
+
 </html>

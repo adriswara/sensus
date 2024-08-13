@@ -75,5 +75,8 @@ if (!isset($_SESSION['login'])) {
 <td><a href="read_kartuKeluarga.php"><button
 class="btn btn-outline-warning">Back</button></a></td>
 </body>
+<br>
+<br>
+<?php include "template/footer.php" ?>
 
 </html>
