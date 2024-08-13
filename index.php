@@ -14,7 +14,7 @@
         <!--  -->
         <?php
         include "connection.php";
-        $queryCarousel = "SELECT * FROM `artikel` ORDER BY id_artikel DESC LIMIT 3";
+        $queryCarousel = "SELECT * FROM `artikel` where topik_artikel != 'Profil'  ORDER BY id_artikel DESC LIMIT 3";
         $dataCarousel = mysqli_query($db_connection, $queryCarousel);
         $i = 1;
         foreach ($dataCarousel as $data):
@@ -47,7 +47,7 @@
 
     <?php
     include "connection.php";
-    $queryHotNews = "SELECT * FROM `artikel` ORDER BY id_artikel ASC ";
+    $queryHotNews = "SELECT * FROM `artikel` where topik_artikel != 'Profil' ORDER BY id_artikel ASC ";
     $dataHotNews = mysqli_query($db_connection, $queryHotNews);
     $i = 1;
     foreach ($dataHotNews as $data):

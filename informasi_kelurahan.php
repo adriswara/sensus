@@ -5,11 +5,11 @@
 <!-- MAP -->
 <nav class="bg-gray-800">
 
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-        <!-- leave it blank -->
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+            <!-- leave it blank -->
+        </div>
     </div>
-</div>
 
 </nav>
 <!-- table -->
@@ -50,7 +50,7 @@
 
 </body>
 <script>
-    var map = L.map('map',{scrollWheelZoom: false}).setView([-7.020626611590784, 107.67543567966491], 15);
+    var map = L.map('map', { scrollWheelZoom: false }).setView([-7.020626611590784, 107.67543567966491], 15);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -72,6 +72,10 @@
     // RW7
     // RW8
     // RW9
+    // -7.0244838,107.6748297,
+    L.marker([-7.0244838,107.6748297]).addTo(map)
+        .bindPopup('RW9')
+        .openPopup();
     // RW10
     L.marker([-7.020935708973771, 107.67185772112744]).addTo(map)
         .bindPopup('RW10')

@@ -1,36 +1,5 @@
 <?php include "template/header.php" ?>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
-    <div class="col">
-        <a href="panduan_warga.php">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <p class="card-text"> Panduan
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="col">
-        <a href="profil_kelurahan.php">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <p class="card-text">Profil Kelurahan</p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="col">
-        <a href="berita.php">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <p class="card-text">Berita</p>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
     <!-- start col -->
 
 
@@ -38,7 +7,7 @@
 
     <?php
     include "connection.php";
-    $queryHotNews = "SELECT * FROM `artikel` ORDER BY id_artikel ASC ";
+    $queryHotNews = "SELECT * FROM `artikel` where topik_artikel = 'Profil' ORDER BY id_artikel ASC ";
     $dataHotNews = mysqli_query($db_connection, $queryHotNews);
     $i = 1;
     foreach ($dataHotNews as $data):

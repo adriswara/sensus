@@ -35,7 +35,7 @@ if (!isset($_SESSION['login'])) {
   </div>
   <div class="col">
     <div class="card shadow-sm">
-      <a href="read_sensus.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+      <a href="read_kartuKeluarga.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
           src="img/citizen.png" preserveAspectRatio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#55595c" /></img>
       </a>
@@ -44,7 +44,7 @@ if (!isset($_SESSION['login'])) {
           This content is a little bit longer.</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <a href="read_sensus.php"><button type="button" class="btn btn-sm btn-outline-secondary">Sensus
+            <a href="read_kartuKeluarga.php"><button type="button" class="btn btn-sm btn-outline-secondary">Sensus
                 List</button></a>
           </div>
         </div>
