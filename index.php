@@ -234,7 +234,7 @@ $dataRW15 = mysqli_query($db_connection, $queryRW15);
 // FORW1
 foreach ($dataRW1 as $data):
     ?>
-    <p id="idRW1"><?php echo $data['totalRW1'] ?></p>
+    <p style="display:none" id="idRW1"><?php echo $data['totalRW1'] ?></p>
     </div>
 <?php endforeach ?>
 
@@ -242,98 +242,98 @@ foreach ($dataRW1 as $data):
 <?php
 foreach ($dataRW2 as $data):
     ?>
-    <p id="idRW2"><?php echo $data['totalRW2'] ?></p>
+    <p style="display:none" id="idRW2"><?php echo $data['totalRW2'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW3 -->
 <?php
 foreach ($dataRW3 as $data):
     ?>
-    <p id="idRW3"><?php echo $data['totalRW3'] ?></p>
+    <p style="display:none" id="idRW3"><?php echo $data['totalRW3'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW4 -->
 <?php
 foreach ($dataRW4 as $data):
     ?>
-    <p id="idRW4"><?php echo $data['totalRW4'] ?></p>
+    <p style="display:none" id="idRW4"><?php echo $data['totalRW4'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW5 -->
 <?php
 foreach ($dataRW5 as $data):
     ?>
-    <p id="idRW5"><?php echo $data['totalRW5'] ?></p>
+    <p style="display:none" id="idRW5"><?php echo $data['totalRW5'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW6 -->
 <?php
 foreach ($dataRW6 as $data):
     ?>
-    <p id="idRW6"><?php echo $data['totalRW6'] ?></p>
+    <p style="display:none" id="idRW6"><?php echo $data['totalRW6'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW7 -->
 <?php
 foreach ($dataRW7 as $data):
     ?>
-    <p id="idRW7"><?php echo $data['totalRW7'] ?></p>
+    <p style="display:none" id="idRW7"><?php echo $data['totalRW7'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW8 -->
 <?php
 foreach ($dataRW8 as $data):
     ?>
-    <p id="idRW8"><?php echo $data['totalRW8'] ?></p>
+    <p style="display:none" id="idRW8"><?php echo $data['totalRW8'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW9 -->
 <?php
 foreach ($dataRW9 as $data):
     ?>
-    <p id="idRW9"><?php echo $data['totalRW9'] ?></p>
+    <p style="display:none" id="idRW9"><?php echo $data['totalRW9'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW10 -->
 <?php
 foreach ($dataRW10 as $data):
     ?>
-    <p id="idRW10"><?php echo $data['totalRW10'] ?></p>
+    <p style="display:none" id="idRW10"><?php echo $data['totalRW10'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW11 -->
 <?php
 foreach ($dataRW11 as $data):
     ?>
-    <p id="idRW11"><?php echo $data['totalRW11'] ?></p>
+    <p style="display:none" id="idRW11"><?php echo $data['totalRW11'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW12 -->
 <?php
 foreach ($dataRW12 as $data):
     ?>
-    <p id="idRW12"><?php echo $data['totalRW12'] ?></p>
+    <p style="display:none" id="idRW12"><?php echo $data['totalRW12'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW13 -->
 <?php
 foreach ($dataRW13 as $data):
     ?>
-    <p id="idRW13"><?php echo $data['totalRW13'] ?></p>
+    <p style="display:none" id="idRW13"><?php echo $data['totalRW13'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW14 -->
 <?php
 foreach ($dataRW14 as $data):
     ?>
-    <p id="idRW14"><?php echo $data['totalRW14'] ?></p>
+    <p style="display:none" id="idRW14"><?php echo $data['totalRW14'] ?></p>
     </div>
 <?php endforeach ?>
 <!-- FORW15 -->
 <?php
 foreach ($dataRW15 as $data):
     ?>
-    <p id="idRW15"><?php echo $data['totalRW15'] ?></p>
+    <p style="display:none" id="idRW15"><?php echo $data['totalRW15'] ?></p>
     </div>
 <?php endforeach ?>
 
@@ -376,80 +376,81 @@ $kelahiranMin10 = mysqli_query($db_connection, $queryLahirMin10);
 // FOR Y = NOW 
 foreach ($kelahiranNow as $data):
     ?>
-    <p id="idTahunMin0"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirNow"> <?php echo $data['angkaLahirNow'] ?></p>
+    <p style="display:none" id="idTahunMin0"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirNow"> <?php echo $data['angkaLahirNow'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 1 -->
 <?php
 foreach ($kelahiranMin1 as $data):
     ?>
-    <p id="idTahunMin1"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin1"> <?php echo $data['angkaLahirMin1'] ?></p>
+    <p style="display:none" id="idTahunMin1"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin1"> <?php echo $data['angkaLahirMin1'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 2 -->
 <?php
 foreach ($kelahiranMin2 as $data):
     ?>
-    <p id="idTahunMin2"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin2"> <?php echo $data['angkaLahirMin2'] ?></p>
+    <p style="display:none" id="idTahunMin2"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin2"> <?php echo $data['angkaLahirMin2'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 3 -->
 <?php
 foreach ($kelahiranMin3 as $data):
     ?>
-    <p id="idTahunMin3"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin3"> <?php echo $data['angkaLahirMin3'] ?></p>
+    <p style="display:none" id="idTahunMin3"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin3"> <?php echo $data['angkaLahirMin3'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 4 -->
 <?php
 foreach ($kelahiranMin4 as $data):
     ?>
-    <p id="idTahunMin4"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin4"> <?php echo $data['angkaLahirMin4'] ?></p>
+    <p style="display:none" id="idTahunMin4"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin4"> <?php echo $data['angkaLahirMin4'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 5 -->
 <?php
 foreach ($kelahiranMin5 as $data):
     ?>
-    <p id="idTahunMin5"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin5"> <?php echo $data['angkaLahirMin5'] ?></p>
+    <p style="display:none" id="idTahunMin5"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin5"> <?php echo $data['angkaLahirMin5'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 6 -->
 <?php
 foreach ($kelahiranMin6 as $data):
     ?>
-    <p id="idTahunMin6"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin6"> <?php echo $data['angkaLahirMin6'] ?></p>
+    <p style="display:none" id="idTahunMin6"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin6"> <?php echo $data['angkaLahirMin6'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 7 -->
 <?php
 foreach ($kelahiranMin7 as $data):
     ?>
-    <p id="idTahunMin7"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin7"> <?php echo $data['angkaLahirMin7'] ?></p>
+    <p style="display:none" id="idTahunMin7"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin7"> <?php echo $data['angkaLahirMin7'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 8 -->
 <?php
 foreach ($kelahiranMin8 as $data):
     ?>
-    <p id="idTahunMin8"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin8"> <?php echo $data['angkaLahirMin8'] ?></p>
+    <p style="display:none" id="idTahunMin8"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin8"> <?php echo $data['angkaLahirMin8'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 9 -->
 <?php
 foreach ($kelahiranMin9 as $data):
     ?>
-    <p id="idTahunMin9"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin9"> <?php echo $data['angkaLahirMin9'] ?></p>
+    <p style="display:none" id="idTahunMin9"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin9"> <?php echo $data['angkaLahirMin9'] ?></p>
 <?php endforeach ?>
 <!-- FOR Y - 10 -->
 <?php
 foreach ($kelahiranMin10 as $data):
     ?>
-    <p id="idTahunMin10"><?php echo $data['tahun'] ?> </p>
-    <p id="idLahirMin10"> <?php echo $data['angkaLahirMin10'] ?></p>
+    <p style="display:none" id="idTahunMin10"><?php echo $data['tahun'] ?> </p>
+    <p style="display:none" id="idLahirMin10"> <?php echo $data['angkaLahirMin10'] ?></p>
 <?php endforeach ?>
 <!--  -->
+<?php include "template/footer.php" ?>
 </body>
 
 <script>
