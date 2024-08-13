@@ -7,7 +7,7 @@ if (isset($_POST['save'])) {
 
 
 
-$query = "INSERT INTO admin (username, password) VALUES ('$_POST[username]','$_POST[password]')";
+$query = "INSERT INTO admin (username, password, admin_type) VALUES ('$_POST[username]','$_POST[password]','$_POST[admin_type]')";
 $create = mysqli_query($db_connection ,$query);
 
 if ($create) {

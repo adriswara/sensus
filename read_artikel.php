@@ -6,7 +6,7 @@ if (!isset($_SESSION['login'])) {
   echo "<script>alert('Please login first :');window.location.replace('login.php');</script>";
 }
 ?>
-<p><a href="add_artikel.php"> Add Artikel</a></p>
+<p><a href="add_artikel.php"><button class="btn btn-success">Add Artikel</button></a></p>
 
 <!-- table -->
 <table class="table">

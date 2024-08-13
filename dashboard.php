@@ -18,7 +18,7 @@ if (!isset($_SESSION['login'])) {
   <div class="col">
     <div class="card shadow-sm">
       <a href="read_artikel.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-          src="img/terminal.png" preserveAspectRatio="xMidYMid slice" focusable="false">
+          src="img/article.png" preserveAspectRatio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#55595c" /></img>
       </a>
       <div class="card-body">
@@ -36,7 +36,7 @@ if (!isset($_SESSION['login'])) {
   <div class="col">
     <div class="card shadow-sm">
       <a href="read_sensus.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-          src="img/rute.png" preserveAspectRatio="xMidYMid slice" focusable="false">
+          src="img/citizen.png" preserveAspectRatio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#55595c" /></img>
       </a>
       <div class="card-body">
@@ -56,7 +56,7 @@ if (!isset($_SESSION['login'])) {
   <div class="col">
     <div class="card shadow-sm">
       <a href="read_admin.php"><img class="bd-placeholder-img card-img-top" width="100%" height="225"
-          src="img/admin.png" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice"
+          src="img/admin2.png" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice"
           focusable="false">
         <rect width="100%" height="100%" fill="#55595c" /></img>
       </a>

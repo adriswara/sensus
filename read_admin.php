@@ -6,7 +6,7 @@ if (!isset($_SESSION['login'])) {
     echo "<script>alert('Please login first :');window.location.replace('login.php');</script>";
 }
 ?>
-<p><a href="add_admin.php"> Add admin</a></p>
+<p><a href="add_admin.php"> <button class="btn btn-success">Add admin</button></a></p> 
 
 <!-- table -->
 <table class="table">
@@ -33,6 +33,7 @@ if (!isset($_SESSION['login'])) {
       <th scope="row"><?php echo $i++; ?></th>
       <td><?php echo $data['username']?></td>
       <td><?php echo $data['password']?></td>
+      <td><?php echo $data['admin_type']?></td>
       <td><a href="edit_admin.php?id_admin=<?=$data['id_admin']?>"><button class="btn btn-outline-primary">Edit</button></a></td>
       <td><a href="delete_admin.php?id_admin=<?=$data['id_admin']?>"><button class="btn btn-outline-danger">Delete</button></a></td>
     </tr>

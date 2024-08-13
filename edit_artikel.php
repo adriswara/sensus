@@ -43,16 +43,26 @@ if (!isset($_SESSION['login'])) {
             </tr>
             <tr>
                 <td>Topik</td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="topik_artikel"
-                        value="<?= $data['topik_artikel']; ?>" required></td>
+                <td>
+                    <select name="topik_artikel">
+                        <option value="Panduan" <?= ($data['topik_artikel'] == 'Panduan') ? 'selected' : ''; ?>>Panduan
+                        </option>
+                        <option value="Berita" <?= ($data['topik_artikel'] == 'Berita') ? 'selected' : ''; ?>>Berita
+                        </option>
+                        <option value="Profil" <?= ($data['topik_artikel'] == 'Profil') ? 'selected' : ''; ?>>Profil
+                        </option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <!-- <td>Isi</td>
                 <td><input class="" style="border-width: 1px; border-color: black;" type="area" name="isi_artikel" value="" required></td> -->
                 <br>
-                <p><label for="w3review">Review of W3Schools:</label></p>
-                <textarea  style="border-width: 1px; border-color: black;"  name="isi_artikel" rows="4"
-                    cols="50" value="<?= $data['isi_artikel']; ?>" > <?= $data['isi_artikel']; ?> </textarea>
+                <td>
+                    <p><label>Isi Artikel</label></p>
+                </td>
+                <td><textarea style="border-width: 1px; border-color: black;" name="isi_artikel" rows="4" cols="50"
+                        value="<?= $data['isi_artikel']; ?>"> <?= $data['isi_artikel']; ?> </textarea></td>
                 <br>
             </tr>
 
