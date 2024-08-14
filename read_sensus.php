@@ -7,6 +7,7 @@ if (!isset($_SESSION['login'])) {
 }
 ?>
 <br>
+
 <td><a href="add_sensus.php?nik_keluarga=<?= $_GET['nik_keluarga'] ?>"><button class="btn btn-success">Add
       Sensus</button></a></td>
 
@@ -54,7 +55,7 @@ if (!isset($_SESSION['login'])) {
         <th scope="row"><?php echo $i++; ?></th>
         <td><?php echo $data['nama_warga'] ?></td>
         <td><?php echo $data['umur_warga'] ?></td>
-        <td><?php echo ($data['kelamin_warga']) == 0 ? 'Perempuan' : 'Laki-Laki' ?></td>
+        <td><?php echo ($data['kelamin_warga']) == 1? 'Laki-Laki' : 'Perempuan' ?></td>
         <td><?php echo $data['nik_kartuKeluarga_warga'] ?></td>
         <td><?php echo $data['alamat_warga'] ?></td>
         <td><?php echo $data['rt_warga'] ?></td>
