@@ -33,7 +33,7 @@ if (!isset($_SESSION['login'])) {
       <th scope="row"><?php echo $i++; ?></th>
       <td><?php echo $data['username']?></td>
       <td><?php echo $data['password']?></td>
-      <td><?php echo $data['admin_type']?></td>
+      <td><?php echo ($data['admin_type'] == 2) ? 'Super Admin' : (($data['admin_type'] == 1) ? 'Web Admin' : 'Sensus Admin');?></td>
       <td><a href="edit_admin.php?id_admin=<?=$data['id_admin']?>"><button class="btn btn-outline-primary">Edit</button></a></td>
       <td><a href="delete_admin.php?id_admin=<?=$data['id_admin']?>"><button class="btn btn-outline-danger">Delete</button></a></td>
     </tr>

@@ -29,6 +29,10 @@ if (!isset($_SESSION['login'])) {
       <th scope="col">Pekerjaan Keluarga</th>
       <th scope="col">Pendidikan</th>
       <th scope="col">Kepemilikan Rumah</th>
+      <th>nomor anggota</th>
+      <th>keberadaan anggota keluarga</th>
+      <th>kepemilikan akte kelahiran</th>
+      <th>kepesertaan jkn warga</th>
       <th colspan="2" scope="col">Action</th>
     </tr>
   </thead>
@@ -62,6 +66,10 @@ if (!isset($_SESSION['login'])) {
         <td><?php echo $data['pekerjaanKeluarga_warga'] ?></td>
         <td><?php echo $data['pendidikan_warga'] ?></td>
         <td><?php echo $data['kepemilikanRumah_warga'] ?></td>
+        <td><?php echo $data['nomor_anggota_keluarga_warga'] ?></td>
+        <td><?php echo $data['keberadaan_anggota_keluarga_warga'] ?></td>
+        <td><?php echo $data['kepemilikan_akta_kelahiran_warga'] ?></td>
+        <td><?php echo $data['kepesertaan_jkn_warga'] ?></td>
         <!--  -->
         <td><a href="edit_sensus.php?id_warga=<?= $data['id_warga'] ?>"><button
               class="btn btn-outline-primary">Edit</button></a></td>

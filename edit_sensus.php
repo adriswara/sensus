@@ -49,10 +49,6 @@ if (!isset($_SESSION['login'])) {
                 <td><input type="number" name="kelamin_warga" value="<?= $data['kelamin_warga']; ?>" required></td>
             </tr>
             <tr>
-                <td>Nomor Induk Kartu Keluarga</td>
-                <td><input type="text" name="kartuKeluarga_warga" value="<?= $data['kartuKeluarga_warga']; ?>" required></td>
-            </tr>
-            <tr>
                 <td>Alamat</td>
                 <td><input type="text" name="alamat_warga" value="<?= $data['alamat_warga']; ?>" required></td>
             </tr>
@@ -63,10 +59,6 @@ if (!isset($_SESSION['login'])) {
             <tr>
                 <td>RW</td>
                 <td><input type="number" name="rw_warga" value="<?= $data['rw_warga']; ?>" required></td>
-            </tr>
-            <tr>
-                <td>NIK</td>
-                <td><input type="text" name="nik_warga" value="<?= $data['nik_warga']; ?>" required></td>
             </tr>
             <tr>
                 <td>Tanggal Lahir</td>
@@ -101,8 +93,20 @@ if (!isset($_SESSION['login'])) {
                 <td><input type="number" name="kepemilikanRumah_warga" value="<?= $data['kepemilikanRumah_warga']; ?>" required></td>
             </tr>
             <tr>
-                <td>Keterangan</td>
-                <td><input type="text" name="keterangan_warga" value="<?= $data['keterangan_warga']; ?>" required></td>
+                <td>Nomor Anggota Keluarga</td>
+                <td><input type="text" name="nomor_anggota_keluarga_warga" value="<?= $data['nomor_anggota_keluarga_warga']; ?>" required></td>
+            </tr>
+            <tr>
+                <td>Keberadaan Anggota Keluarga</td>
+                <td><input type="text" name="keberadaan_anggota_keluarga_warga" value="<?= $data['keberadaan_anggota_keluarga_warga']; ?>" required></td>
+            </tr>
+            <tr>
+                <td>Kepemilikan Akta Kelahiran Warga</td>
+                <td><input type="text" name="kepemilikan_akta_kelahiran_warga" value="<?= $data['kepemilikan_akta_kelahiran_warga']; ?>" required></td>
+            </tr>
+            <tr>
+                <td>Kepesertaan JKN Warga</td>
+                <td><input type="text" name="kepesertaan_jkn_warga" value="<?= $data['kepesertaan_jkn_warga']; ?>" required></td>
             </tr>
             <tr>
                 <td></td>
