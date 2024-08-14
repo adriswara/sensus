@@ -7,7 +7,7 @@ if (!isset($_SESSION['login'])) {
 }
 ?>
 <br>
-<td><a href="add_sensus.php"><button class="btn btn-success">Add Sensus</button></a></td>
+<td><a href="add_kartuKeluarga.php"><button class="btn btn-success">Add Sensus</button></a></td>
 
 <!-- table -->
 <table class="table">
