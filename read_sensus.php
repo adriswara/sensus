@@ -7,7 +7,8 @@ if (!isset($_SESSION['login'])) {
 }
 ?>
 <br>
-<td><a href="add_sensus.php"><button class="btn btn-success">Add Sensus</button></a></td>
+<td><a href="add_sensus.php?nik_keluarga=<?= $_GET['nik_keluarga'] ?>"><button class="btn btn-success">Add
+      Sensus</button></a></td>
 
 <!-- table -->
 <table class="table">
@@ -53,7 +54,7 @@ if (!isset($_SESSION['login'])) {
         <th scope="row"><?php echo $i++; ?></th>
         <td><?php echo $data['nama_warga'] ?></td>
         <td><?php echo $data['umur_warga'] ?></td>
-        <td><?php echo $data['kelamin_warga'] ?></td>
+        <td><?php echo ($data['kelamin_warga']) == 0 ? 'Perempuan' : 'Laki-Laki' ?></td>
         <td><?php echo $data['nik_kartuKeluarga_warga'] ?></td>
         <td><?php echo $data['alamat_warga'] ?></td>
         <td><?php echo $data['rt_warga'] ?></td>
@@ -61,15 +62,15 @@ if (!isset($_SESSION['login'])) {
         <td><?php echo $data['tglLahir_warga'] ?></td>
         <td><?php echo $data['tempatLahir_warga'] ?></td>
         <td><?php echo $data['agama_warga'] ?></td>
-        <td><?php echo $data['statusPerkawinan_warga'] ?></td>
+        <td><?php echo ($data['statusPerkawinan_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
         <td><?php echo $data['hubunganKeluarga_warga'] ?></td>
         <td><?php echo $data['pekerjaanKeluarga_warga'] ?></td>
         <td><?php echo $data['pendidikan_warga'] ?></td>
-        <td><?php echo $data['kepemilikanRumah_warga'] ?></td>
-        <td><?php echo $data['nomor_anggota_keluarga_warga'] ?></td>
-        <td><?php echo $data['keberadaan_anggota_keluarga_warga'] ?></td>
-        <td><?php echo $data['kepemilikan_akta_kelahiran_warga'] ?></td>
-        <td><?php echo $data['kepesertaan_jkn_warga'] ?></td>
+        <td><?php echo ($data['kepemilikanRumah_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
+        <td><?php echo $data['hubunganKeluarga_warga'] ?></td>
+        <td><?php echo ($data['keberadaan_anggota_keluarga_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
+        <td><?php echo ($data['kepemilikan_akta_kelahiran_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
+        <td><?php echo ($data['kepesertaan_jkn_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
         <!--  -->
         <td><a href="edit_sensus.php?id_warga=<?= $data['id_warga'] ?>"><button
               class="btn btn-outline-primary">Edit</button></a></td>
@@ -80,8 +81,7 @@ if (!isset($_SESSION['login'])) {
   <?php endforeach ?>
 </table>
 <!-- table -->
-<td><a href="read_kartuKeluarga.php"><button
-class="btn btn-outline-warning">Back</button></a></td>
+<td><a href="read_kartuKeluarga.php"><button class="btn btn-outline-warning">Back</button></a></td>
 </body>
 <br>
 <br>

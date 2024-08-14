@@ -58,8 +58,6 @@ if (!isset($_SESSION['login'])) {
                     </select>
                 </td>
             </tr>
-
-
             <tr>
                 <td></td>
                 <td>
