@@ -29,35 +29,457 @@ if (!isset($_SESSION['login'])) {
     <h3>Form Penambahan Kartu Keluarga</h3>
     <form method="POST" action="create_admin.php">
         <table>
+            <!-- Form -->
             <tr>
-                <td>username</td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="username" value=""
-                        required></td>
-            </tr>
-            <tr>
-                <!-- <td>Isi</td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="area" name="isi_artikel" value="" required></td> -->
-                <br>
+                
                 <td>
-                    <p><label>Password</label></p>
+                    <p><label>form</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="password" value=""
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
                         required></td>
-                <br>
+                
             </tr>
+            <!-- endform -->
+            <!-- Form -->
             <tr>
-                <td>Admin Type</td>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
                 <td>
                     <select name="admin_type">
-                        <option value="0">Admin Sensus
-                        </option>
-                        <option value="1">Admin Situs
-                        </option>
-                        <option value="2">Super Admin
+                        <option value="1">option 1
                         </option>
                     </select>
                 </td>
             </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- Form -->
+            <tr>
+                
+                <td>
+                    <p><label>form</label></p>
+                </td>
+                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="form" value=""
+                        required></td>
+                
+            </tr>
+            <!-- endform -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
+            <!-- start select -->
+            <tr>
+                <td>Select</td>
+                <td>
+                    <select name="admin_type">
+                        <option value="1">option 1
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- end select -->
             <tr>
                 <td></td>
                 <td>
