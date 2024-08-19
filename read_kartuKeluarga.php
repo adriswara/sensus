@@ -99,7 +99,7 @@ if (!isset($_SESSION['login'])) {
           <td class="col-1"><?php echo $data['status_remaja_ikut_binkel_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['status_remaja_ikut_pusatinformasi_konseling_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['status_lansia_ikut_binkel_keluarga'] ?></td>
-          <td class="col-1"><?php echo $data['jenis_atap_rumah_keluarga'] ?></td>
+          <td class="col-1"><?php echo ($data['jenis_atap_rumah_keluarga'] == 1) ? 'Beton' : (($data['jenis_atap_rumah_keluarga'] == 2) ? 'Genteng' : (($data['jenis_atap_rumah_keluarga'] == 3) ? 'Asbes' : ((($data['jenis_atap_rumah_keluarga'] == 4) ? 'Kayu/Sirap' : ((($data['jenis_atap_rumah_keluarga'] == 5) ? 'Bambu' : ((($data['jenis_atap_rumah_keluarga'] == 6) ? 'Jerami/Ijuk/Daun-daunan' : ((($data['jenis_atap_rumah_keluarga'] == 7) ? 'Lainnya' : 'Data Error'))))))))));?></td>
           <td class="col-1"><?php echo $data['jenis_dinding_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['jenis_lantai_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['sumber_penerangan_keluarga'] ?></td>
