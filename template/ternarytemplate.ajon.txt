@@ -1,0 +1,13 @@
+($data['ternaryTemplate'] == 1) ? 'result1' : (($data['ternaryTemplate'] == 2) ? 'result2' : (($data['ternaryTemplate'] == 3) ? 'result3' : ((($data['ternaryTemplate'] == 4) ? 'result4' : ((($data['ternaryTemplate'] == 5) ? 'result5' : ((($data['ternaryTemplate'] == 6) ? 'result6' : ((($data['ternaryTemplate'] == 7) ? 'result7' : 'elseCond'))))))))));
+($data['ternaryTemplate'] == 1) ? 'result1' : (($data['ternaryTemplate'] == 2) ? 'result2' : (($data['ternaryTemplate'] == 3) ? 'result3' : ((($data['ternaryTemplate'] == 4) ? 'result4' : ((($data['ternaryTemplate'] == 5) ? 'result5' : ((($data['ternaryTemplate'] == 6) ? 'result6' : 'elseCond'))))))));
+($data['ternaryTemplate'] == 1) ? 'result1' : (($data['ternaryTemplate'] == 2) ? 'result2' : (($data['ternaryTemplate'] == 3) ? 'result3' : ((($data['ternaryTemplate'] == 4) ? 'result4' : ((($data['ternaryTemplate'] == 5) ? 'result5' : 'elseCond'))))));
+($data['ternaryTemplate'] == 1) ? 'result1' : (($data['ternaryTemplate'] == 2) ? 'result2' : (($data['ternaryTemplate'] == 3) ? 'result3' : ((($data['ternaryTemplate'] == 4) ? 'result4' : 'elseCond'))));
+($data['ternaryTemplate'] == 1) ? 'result1' : (($data['ternaryTemplate'] == 2) ? 'result2' : (($data['ternaryTemplate'] == 3) ? 'result3' : "elseCond" ));
+($data['ternaryTemplate'] == 1) ? 'result1' : (($data['ternaryTemplate'] == 2) ? 'result2' : 'elseCond');
+($data['ternaryTemplate'] == 1) ? 'result1' : "elseCond";
+
+
+
+
+
+

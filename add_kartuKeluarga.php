@@ -374,7 +374,7 @@ if (!isset($_SESSION['login'])) {
                 <td>jenis_lantai_keluarga</td>
                 <td>
                     <select name="jenis_lantai_keluarga">
-                        <option value="1">Keramik/Marmer/Ubin?tegel
+                        <option value="1">Keramik/Marmer/Ubin/Tegel
                         </option>
                         <option value="2">Semen
                         </option>

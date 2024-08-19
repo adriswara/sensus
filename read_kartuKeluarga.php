@@ -101,7 +101,7 @@ if (!isset($_SESSION['login'])) {
           <td class="col-1"><?php echo $data['status_lansia_ikut_binkel_keluarga'] ?></td>
           <td class="col-1"><?php echo ($data['jenis_atap_rumah_keluarga'] == 1) ? 'Beton' : (($data['jenis_atap_rumah_keluarga'] == 2) ? 'Genteng' : (($data['jenis_atap_rumah_keluarga'] == 3) ? 'Asbes' : ((($data['jenis_atap_rumah_keluarga'] == 4) ? 'Kayu/Sirap' : ((($data['jenis_atap_rumah_keluarga'] == 5) ? 'Bambu' : ((($data['jenis_atap_rumah_keluarga'] == 6) ? 'Jerami/Ijuk/Daun-daunan' : ((($data['jenis_atap_rumah_keluarga'] == 7) ? 'Lainnya' : 'Data Error'))))))))));?></td>
           <td class="col-1"><?php echo $data['jenis_dinding_keluarga'] ?></td>
-          <td class="col-1"><?php echo $data['jenis_lantai_keluarga'] ?></td>
+          <td class="col-1"><?php echo ($data['jenis_lantai_keluarga'] == 1) ? 'Keramik/Marmer/Ubin/Tegel' : (($data['jenis_lantai_keluarga'] == 2) ? 'Semen' : (($data['jenis_lantai_keluarga'] == 3) ? 'Kayu/Papan' : ((($data['jenis_lantai_keluarga'] == 4) ? 'Bambu' : ((($data['jenis_lantai_keluarga'] == 5) ? 'Tanah' : ((($data['jenis_lantai_keluarga'] == 6) ? 'Lainnya' : 'Data Error'))))))));?></td>
           <td class="col-1"><?php echo $data['sumber_penerangan_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['sumber_air_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['status_fasilitas_bab_keluarga'] ?></td>
