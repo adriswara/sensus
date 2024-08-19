@@ -35,7 +35,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>nik_keluarga</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text" name="nik_keluarga"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number" name="nik_keluarga"
                         value="" required></td>
 
             </tr>
@@ -46,7 +46,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>jumlah_ibu_melahirkan_keluarga</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number"
                         name="jumlah_ibu_melahirkan_keluarga" value="" required></td>
 
             </tr>
@@ -57,7 +57,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>jumlah_anak_lahir_laki_hidup</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number"
                         name="jumlah_anak_lahir_laki_hidup" value="" required></td>
 
             </tr>
@@ -68,7 +68,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>jumlah_lahir_perempuan_hidup</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number"
                         name="jumlah_anak_lahir_perempuan_hidup" value="" required></td>
 
             </tr>
@@ -79,7 +79,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>jumlah_anak_laki_hidup</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number"
                         name="jumlah_anak_laki_hidup" value="" required></td>
 
             </tr>
@@ -90,7 +90,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>jumlah_anak_perempuan_hidup</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number"
                         name="jumlah_anak_perempuan_hidup" value="" required></td>
 
             </tr>
@@ -101,7 +101,7 @@ if (!isset($_SESSION['login'])) {
                 <td>
                     <p><label>jumlah_anak_diinginkan</label></p>
                 </td>
-                <td><input class="" style="border-width: 1px; border-color: black;" type="text"
+                <td><input class="" style="border-width: 1px; border-color: black;" type="number"
                         name="jumlah_anak_diinginkan" value="" required></td>
 
             </tr>
