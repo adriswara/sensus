@@ -49,8 +49,6 @@ if (!isset($_SESSION['login'])) {
         <th class="col-1" scope="col">total_orang_menetap_dirumah_keluarga</th>
         <th class="col-1" scope="col">bahan_bakar_utama_memasak_keluarga</th>
         <th class="col-1" scope="col">kepemilikan_rumah_keluarga</th>
-        <th class="col-1" scope="col">status_perolehan_info_kependudukan_keluarga</th>
-        <th class="col-1" scope="col">asal_perolehan_info_kependudukan_keluarga</th>
         <th class="col-1" scope="col">status_perolehan_info_kb_keluarga</th>
         <th class="col-1" scope="col">asal_perolehan_info_kb_keluarga</th>
         <th class="col-1" scope="col">status_petugas_asal_informasi_kb_keluarga</th>
@@ -111,8 +109,6 @@ if (!isset($_SESSION['login'])) {
           <td class="col-1"><?php echo $data['total_orang_menetap_dirumah_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['bahan_bakar_utama_memasak_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['kepemilikan_rumah_keluarga'] ?></td>
-          <td class="col-1"><?php echo $data['status_perolehan_info_kependudukan_keluarga'] ?></td>
-          <td class="col-1"><?php echo $data['asal_perolehan_info_kependudukan_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['status_perolehan_info_kb_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['asal_perolehan_info_kb_keluarga'] ?></td>
           <td class="col-1"><?php echo $data['status_petugas_asal_informasi_kb_keluarga'] ?></td>

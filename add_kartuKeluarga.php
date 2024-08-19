@@ -27,7 +27,7 @@ if (!isset($_SESSION['login'])) {
 <body>
     <h1>SIPEKA</h1>
     <h3>Form Penambahan Kartu Keluarga</h3>
-    <form method="POST" action="create_admin.php">
+    <form method="POST" action="create_kartuKeluarga.php">
         <table>
             <!-- Form -->
             <tr>
@@ -69,7 +69,7 @@ if (!isset($_SESSION['login'])) {
                     <p><label>jumlah_lahir_perempuan_hidup</label></p>
                 </td>
                 <td><input class="" style="border-width: 1px; border-color: black;" type="text"
-                        name="jumlah_lahir_perempuan_hidup" value="" required></td>
+                        name="jumlah_anak_lahir_perempuan_hidup" value="" required></td>
 
             </tr>
             <!-- endform -->
