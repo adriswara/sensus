@@ -21,7 +21,7 @@ if (!isset($_SESSION['login'])) {
 
   <?php
     include "connection.php";
-    $query = "SELECT * FROM admin";
+    $query = "SELECT * FROM admin where is_delete = 0";
     $admin = mysqli_query($db_connection, $query);
 
     $i= 1;

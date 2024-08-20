@@ -1,22 +1,22 @@
 <?php 
 
-if (isset($_GET['id_warga'])) {
+if (isset($_GET['nik_keluarga'])) {
     include "connection.php";
 
 
 
-$query = "UPDATE warga SET is_delete = 1 WHERE id_warga = '$_GET[id_warga]'";
+$query = "UPDATE keluarga SET is_delete = 1 WHERE nik_keluarga = '$_GET[nik_keluarga]'";
 
 
 $delete = mysqli_query($db_connection ,$query);
 
     if ($delete) {
     // echo "<p>Pet added succesfully !</p>";
-    echo "<script> alert('warga delete succesfuly !'); </script>";
+    echo "<script> alert('keluarga delete succesfuly !'); </script>";
     }
     else{
     // echo "<p>Pet add failed !</p>";
-    echo "<script> alert('warga delete failed!'); </script>";
+    echo "<script> alert('keluarga delete failed!'); </script>";
     }
 }
 ?>

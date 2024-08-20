@@ -41,7 +41,7 @@ if (!isset($_SESSION['login'])) {
 
   <?php
   include "connection.php";
-  $query = "SELECT * FROM warga where nik_kartuKeluarga_warga = '$_GET[nik_keluarga]' ";
+  $query = "SELECT * FROM warga where nik_kartuKeluarga_warga = '$_GET[nik_keluarga]' AND is_delete = 0 ";
   $warga = mysqli_query($db_connection, $query);
 
 

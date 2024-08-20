@@ -1,11 +1,11 @@
 <?php 
 
-if (isset($_GET['id'])) {
+if (isset($_GET['id_artikel'])) {
     include "connection.php";
 
 
 
-$query = "DELETE FROM artikel WHERE id = '$_GET[id]'";
+$query = "UPDATE artikel SET is_delete = 1 WHERE id_artikel = '$_GET[id_artikel]'";
 
 
 $delete = mysqli_query($db_connection ,$query);

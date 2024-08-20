@@ -26,7 +26,7 @@ if (!isset($_SESSION['login'])) {
 
   <?php
   include "connection.php";
-  $query = "SELECT * FROM artikel";
+  $query = "SELECT * FROM artikel where is_delete = 0";
   $artikel = mysqli_query($db_connection, $query);
 
   $i = 1;

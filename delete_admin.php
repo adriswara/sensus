@@ -5,7 +5,7 @@ if (isset($_GET['id_admin'])) {
 
 
 
-$query = "DELETE FROM admin WHERE id_admin = '$_GET[id_admin]'";
+$query = "UPDATE  admin SET is_delete = 1 WHERE id_admin = '$_GET[id_admin]'";
 
 
 $delete = mysqli_query($db_connection ,$query);

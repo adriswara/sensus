@@ -63,7 +63,7 @@ if (!isset($_SESSION['login'])) {
 
     <?php
     include "connection.php";
-    $query = "SELECT * FROM keluarga";
+    $query = "SELECT * FROM keluarga where is_Delete = 0";
     $keluarga = mysqli_query($db_connection, $query);
 
 
