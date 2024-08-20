@@ -21,7 +21,7 @@
         </a>
     </div>
     <div class="col">
-        <a href="berita.php">
+        <a href="berita_kelurahan.php">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <p class="card-text">Berita</p>
@@ -78,6 +78,9 @@
     </div>
 
 </nav>
+
+<?php include "template/footer.php" ?>
+
 </body>
 
 <script>

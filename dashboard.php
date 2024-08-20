@@ -11,9 +11,9 @@ include "connection.php";
 $admin = "SELECT * FROM `admin` where username = '$_SESSION[username]'";
 $dataAdmin = mysqli_query($db_connection, $admin);
 foreach ($dataAdmin as $data):
-?>
-<!-- Welcome -->    
-<h1 class="mt-5 mb-5"> Welome MR <?php echo $_SESSION['username'] ?> <?php echo $data['username'] ?>  </h1>
+  ?>
+  <!-- Welcome -->
+  <h1 class="mt-5 mb-5"> Welome MR <?php echo $_SESSION['username'] ?>   <?php echo $data['username'] ?> </h1>
 <?php endforeach ?>
 <!-- Welcome -->
 <!-- Dashboard -->
@@ -81,6 +81,16 @@ foreach ($dataAdmin as $data):
 
 <!-- Dashboard -->
 
+<nav class="bg-gray-800">
+
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <!-- leave it blank -->
+    </div>
+  </div>
+
+</nav>
+<?php include "template/footer.php" ?>
 </body>
 
 </html>

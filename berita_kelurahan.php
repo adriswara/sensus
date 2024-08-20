@@ -7,7 +7,7 @@
 
     <?php
     include "connection.php";
-    $queryHotNews = "SELECT * FROM `artikel` where topik_artikel = 'Profil' ORDER BY id_artikel ASC ";
+    $queryHotNews = "SELECT * FROM `artikel` where topik_artikel = 'Berita' ORDER BY id_artikel ASC ";
     $dataHotNews = mysqli_query($db_connection, $queryHotNews);
     $i = 1;
     foreach ($dataHotNews as $data):
@@ -47,6 +47,7 @@
     </div>
 
 </nav>
+<?php include "template/footer.php" ?>
 </body>
 
 <script>
