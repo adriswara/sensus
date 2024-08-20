@@ -6,14 +6,19 @@ if (!isset($_SESSION['login'])) {
   echo "<script>alert('Please login first :');window.location.replace('login.php');</script>";
 }
 ?>
-<!-- Welcome -->
-<h1 class="mt-5 mb-5"> Welome MR <?php echo $_SESSION['username'] ?> </h1>
+<?php
+include "connection.php";
+$admin = "SELECT * FROM `admin` where username = '$_SESSION[username]'";
+$dataAdmin = mysqli_query($db_connection, $admin);
+foreach ($dataAdmin as $data):
+?>
+<!-- Welcome -->    
+<h1 class="mt-5 mb-5"> Welome MR <?php echo $_SESSION['username'] ?> <?php echo $data['username'] ?>  </h1>
+<?php endforeach ?>
 <!-- Welcome -->
 <!-- Dashboard -->
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
-
-
 
   <div class="col">
     <div class="card shadow-sm">
