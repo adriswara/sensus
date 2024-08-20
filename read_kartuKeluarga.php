@@ -11,7 +11,7 @@ if (!isset($_SESSION['login'])) {
 
 <!-- table -->
 <div class="table-responsive">
-  <table class="table table-sm table-bordered mt-10 mb-80">
+  <table class="table table-sm mt-10 mb-80">
     <thead>
       <tr class="table-success d-flex">
         <th class="col-1" scope="col">#</th>

@@ -35,7 +35,7 @@ if (!isset($_SESSION['login'])) {
         <center>
             <p style="font-size: 40px;"><?php echo $data['judul_artikel'] ?></p>
         </center>
-        <p style="font-size: 20px; margin-left: 100px;" ><a href="informasi_kelurahan.php">Informasi</a> > <?php echo $data['topik_artikel'] ?><?php echo $data['judul_artikel'] ?></p>
+        <p style="font-size: 20px; margin-left: 100px;" ><a href="informasi_warga.php">Informasi</a> > <?php echo $data['topik_artikel'] ?><?php echo $data['judul_artikel'] ?></p>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide">
         <!--  -->
