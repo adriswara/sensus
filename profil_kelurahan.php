@@ -22,11 +22,7 @@
                     <p class="card-text"> <?php echo $data['topik_artikel'] ?></p>
                     <p class="card-text"> <?php echo $data['judul_artikel'] ?></p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <a href="view_artikel.php?id_artikel=<?= $data['id_artikel'] ?>"><button type="button"
-                                    class="btn btn-sm btn-outline-secondary"> Baca
-                                </button></a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -47,6 +43,8 @@
     </div>
 
 </nav>
+<?php include "template/footer.php" ?>
+
 </body>
 
 <script>

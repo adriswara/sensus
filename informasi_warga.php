@@ -38,7 +38,7 @@
 
     <?php
     include "connection.php";
-    $queryHotNews = "SELECT * FROM `artikel` ORDER BY id_artikel ASC ";
+    $queryHotNews = "SELECT * FROM `artikel` where topik_artikel != 'Profil' ORDER BY id_artikel ASC ";
     $dataHotNews = mysqli_query($db_connection, $queryHotNews);
     $i = 1;
     foreach ($dataHotNews as $data):
@@ -46,8 +46,8 @@
         <!--  -->
         <div class="col">
             <div class="card shadow-sm">
-                <a href="read_artikel.php"> <img class="object-fit-cover" width="100%" height="100%"
-                        src="img/<?= $data['display_artikel']; ?>"></img>
+                <a href="view_artikel.php?id_artikel=<?= $data['id_artikel'] ?>"> <img class="object-fit-cover" width="100%"
+                        height="100%" src="img/<?= $data['display_artikel']; ?>"></img>
                 </a>
                 <div class="card-body">
                     <p class="card-text"> <?php echo $data['topik_artikel'] ?></p>
