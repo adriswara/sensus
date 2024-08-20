@@ -79,5 +79,5 @@ if (!isset($_SESSION['login'])) {
     </form>
     <p><a href="read_admin.php">CANCEL</a></p>
 </body>
-
+<?php include "template/footer.php"  ?>
 </html>

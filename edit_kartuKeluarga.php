@@ -596,5 +596,6 @@ if (!isset($_SESSION['login'])) {
     </form>
     <p><a href="read_kartuKeluarga.php">CANCEL</a></p>
 </body>
+<?php include "template/footer.php"  ?>
 
 </html>

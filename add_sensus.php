@@ -244,5 +244,6 @@ if (!isset($_SESSION['login'])) {
     </form>
     <p><a href="read_sensus.php">CANCEL</a></p>
 </body>
+<?php include "template/footer.php"  ?>
 
 </html>
