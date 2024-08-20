@@ -24,72 +24,60 @@ if (!isset($_SESSION['login'])) {
 
 
 <body>
-        <?php
-        include "connection.php";
-        $querry = "SELECT * FROM artikel WHERE id_artikel='$_GET[id_artikel]'";
-        $pet = mysqli_query($db_connection, $querry);
-        $data = mysqli_fetch_assoc($pet);
-        ?>
+    <?php
+    include "connection.php";
+    $querry = "SELECT * FROM artikel WHERE id_artikel='$_GET[id_artikel]'";
+    $pet = mysqli_query($db_connection, $querry);
+    $data = mysqli_fetch_assoc($pet);
+    ?>
 
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+    <div class="ml-auto mr-auto mt-10 mb-10">
+        <center>
+            <p style="font-size: 40px;"><?php echo $data['judul_artikel'] ?></p>
+        </center>
+        <p style="font-size: 20px; margin-left: 100px;" ><a href="informasi_kelurahan.php">Informasi</a> > <?php echo $data['topik_artikel'] ?><?php echo $data['judul_artikel'] ?></p>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <!--  -->
+        <div class="carousel-inner">
             <!--  -->
-            <div class="carousel-inner">
-                <!--  -->
 
-                <div class="carousel-item active">
-                    <img src="img/<?= $data['display_artikel']; ?>" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5><?php echo $data['topik_artikel'] ?></h5>
-                        <p><?php echo $data['judul_artikel'] ?></p>
-                    </div>
+            <div class="carousel-item active">
+                <img src="img/<?= $data['display_artikel']; ?>" class="d-block ml-auto mr-auto" width="80%" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><?php echo $data['topik_artikel'] ?></h5>
+                    <p><?php echo $data['judul_artikel'] ?></p>
                 </div>
-                <!--  -->
             </div>
             <!--  -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
+        <!--  -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-        <table>
-            <tr>
-                <td>Judul</td>
-                <td>
-                    <p> <?= $data['judul_artikel'] ?></p>
-                </td>
-            </tr>
-            <tr>
-                <td>Topik</td>
-                <td>
-                    <p> <?= $data['topik_artikel'] ?></p>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td>Isi</td>
+    <table>
+        
+        <tr>
+            <!-- <td>Isi</td>
                 <td><input class="" style="border-width: 1px; border-color: black;" type="area" name="isi_artikel" value="" required></td> -->
-                <br>
-                <p style="border-width: 1px; border-color: black;" name="isi_artikel" rows="4" cols="50"
-                    value="<?= $data['isi_artikel']; ?>"> <?= $data['isi_artikel']; ?> </p>
-                <br>
-            </tr>
-        </table>
-
-    <p><a href="index.php">Kembali</a></p>
+            <br>
+            <hr>
+            <p style="font-size: 24px;text-indent: 100px;" class="ml-48 mr-48 mt-20" name="isi_artikel" rows="4" cols="50"
+                value="<?= $data['isi_artikel']; ?>"> <?= $data['isi_artikel']; ?> </p>
+            <br>
+            <hr>
+        </tr>
+    </table>
+    <?php include 'template/footer.php' ?>
 </body>
 
 </html>
