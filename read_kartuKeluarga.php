@@ -7,11 +7,11 @@ if (!isset($_SESSION['login'])) {
 }
 ?>
 <br>
-<td><a href="add_kartuKeluarga.php"><button class="btn btn-success">Add Sensus</button></a></td>
+<td class="mt-10"><a href="add_kartuKeluarga.php"><button class="btn btn-success">Add Sensus</button></a></td>
 
 <!-- table -->
 <div class="table-responsive">
-  <table class="table table-sm table-bordered">
+  <table class="table table-sm table-bordered mt-10 mb-80">
     <thead>
       <tr class="table-success d-flex">
         <th class="col-1" scope="col">#</th>
