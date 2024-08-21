@@ -15,44 +15,45 @@ if (!isset($_SESSION['login'])) {
     <thead>
       <tr class="table-success d-flex">
         <th class="col-1" scope="col">#</th>
-        <th class="col-1" scope="col">NIK</th>
+        <th class="col-1" scope="col">NIK Kartu Keluarga</th>
         <th class="col-1" scope="col">Jumlah Lahir dari ibu</th>
         <th class="col-1" scope="col">Junlah anak lahir laki laki masih hidup</th>
         <th class="col-1" scope="col">Junlah anak lahir perempuan masih hidup</th>
         <th class="col-1" scope="col">Jumlah anak laki laki masih hidup</th>
         <th class="col-1" scope="col">Jumlah anak perempuan masih hidup</th>
         <th class="col-1" scope="col">Jumlah anak yang diinginkan</th>
-        <th class="col-1" scope="col">Status Ibadah Rutin Keluarga</th>
-        <th class="col-1" scope="col">Status Kepemilikan Akte Nikah Keluarga</th>
-        <th class="col-1" scope="col">Status konflik keluarga</th>
-        <th class="col-1" scope="col">Status sumber penghasilan keluarga</th>
-        <th class="col-1" scope="col">Status kelayakan makanan keluarga</th>
-        <th class="col-1" scope="col">Status tabungan keluarga</th>
-        <th class="col-1" scope="col">Status keluarga yang sakit atau disabilitas</th>
-        <th class="col-1" scope="col">Status Penggunaan Sosial media</th>
-        <th class="col-1" scope="col">Status waktu interaksi keluarga</th>
-        <th class="col-1" scope="col">Status waktu interaksi pasutri</th>
-        <th class="col-1" scope="col">Status berekreasi keluar rumah</th>
-        <th class="col-1" scope="col">Status keikutsertaan gotong royong pada lingkungan RT</th>
-        <th class="col-1" scope="col">Status balita ikut posyandu</th>
-        <th class="col-1" scope="col">Status balita ikut bimbingan keluarga balita</th>
-        <th class="col-1" scope="col">status remaja ikut_bimbingan keluarga remaja</th>
-        <th class="col-1" scope="col">status_remaja_ikut_pusatinformasi_konseling_keluarga</th>
-        <th class="col-1" scope="col">status lansia ikut bimbingan keluarga lansia</th>
-        <th class="col-1" scope="col">jenis atap rumah keluarga</th>
-        <th class="col-1" scope="col">jenis dinding rumah keluarga</th>
-        <th class="col-1" scope="col">jenis lantai rumah keluarga</th>
-        <th class="col-1" scope="col">sumber penerangan utama rumah keluarga</th>
-        <th class="col-1" scope="col">sumber air utama rumah keluarga</th>
-        <th class="col-1" scope="col">status fasilitas bab rumah keluarga</th>
-        <th class="col-1" scope="col">luas rumah keluarga m(2)</th>
-        <th class="col-1" scope="col">total orang menetap dirumah keluarga</th>
-        <th class="col-1" scope="col">bahan bakar utama untuk memasak di rumah keluarga</th>
-        <th class="col-1" scope="col">status kepemilikan rumah keluarga</th>
-        <th class="col-1" scope="col">status_perolehan_info_kb_keluarga</th>
-        <th class="col-1" scope="col">asal_perolehan_info_kb_keluarga</th>
-        <th class="col-1" scope="col">status_petugas_asal_informasi_kb_keluarga</th>
-        <th class="col-1" scope="col">asal_petugas_perolehan_info_kb_keluarga</th>
+        <th class="col-1" scope="col">Keluarga melakukan ibadah secara rutin?</th>
+        <th class="col-1" scope="col">Kepala keluarga memiliki akte nikah?</th>
+        <th class="col-1" scope="col">Keluarga mengalami konfik akhir akhir ini?</th>
+        <th class="col-1" scope="col">Keluarga memiliki sumber penghasilan utama?</th>
+        <th class="col-1" scope="col">Keluarga memiliki akses makanan 4 sehat 5 sempurna selama 6 bulan terakhir ?</th>
+        <th class="col-1" scope="col">Keluarga Memiliki tabungan atau asset lain nya seperti (Hasil kebun, hasil ternak, atau asset tabungan lainnya)</th>
+        <th class="col-1" scope="col">Keluarga memiliki anggota yang sakit atau disabilitas dalam 6 bulan terakhir?</th>
+        <th class="col-1" scope="col">Keluarga memiliki akses internet dan media sosial?</th>
+        <th class="col-1" scope="col">Keluarga memiliki waktu untuk berinteraksi dalam 6 bulan terakhir?</th>
+        <th class="col-1" scope="col">Selama 6 bulan terakhir pengasuhan bersama dilakukan bersama antara suami dan istri?</th>
+        <th class="col-1" scope="col">Selama 6 bulan terakhir keluarga pernah berekreasi bersama di luar rumah?</th>
+        <th class="col-1" scope="col">Selama 6 bulan terakhir, keluarga ikut serta dalam kegiatan sosial/gotong royong di lingkungan RT?</th>
+        <th class="col-1" scope="col">Keluarga memiliki balita ikut kegiatan Posyandu</th>
+        <th class="col-1" scope="col">Keluarga memiliki balita dan anak (0-6 tahun) ikut kegiatan Bina Keluarga Balita</th>
+        <th class="col-1" scope="col">Keluarga Memiliki remaja (10-24 tahun) ikut kegiatan Bina Keluarga Remaja</th>
+        <th class="col-1" scope="col">Ada anggota keluarga masih remaja (10-24 thn) ikut Pusat Informasi Dan Konseling Remaja / Mahasiswa (PIK-R/M)</th>
+        <th class="col-1" scope="col">Keluarga yang memiliki lansia (umur >= 60 tahun) ikut kegiatan Bina Keluarga Lansia</th>
+        <th class="col-1" scope="col">Keluarga mengikuti kegiatan usaha ekonomi melalui</th>
+        <th class="col-1" scope="col">Jenis atap rumah keluarga</th>
+        <th class="col-1" scope="col">Jenis dinding rumah keluarga</th>
+        <th class="col-1" scope="col">Jenis lantai rumah keluarga</th>
+        <th class="col-1" scope="col">Jumber penerangan utama rumah keluarga</th>
+        <th class="col-1" scope="col">Sumber air utama rumah keluarga</th>
+        <th class="col-1" scope="col">Status fasilitas bab rumah keluarga</th>
+        <th class="col-1" scope="col">Luas rumah keluarga m(2)</th>
+        <th class="col-1" scope="col">Total orang menetap dirumah keluarga</th>
+        <th class="col-1" scope="col">Bahan bakar utama untuk memasak di rumah keluarga</th>
+        <th class="col-1" scope="col">Kepemilikan rumah/bangunan tempat tinggal</th>
+        <th class="col-1" scope="col">Keluarga pernah memperoleh/mendenger/melihat pesan/informasi program kependudukan, Keluarga Berencana dan Pembangunan Keluarga dari media?</th>
+        <th class="col-1" scope="col">Jika , dari mana informasi tersebut diperoleh?</th>
+        <th class="col-1" scope="col">Apakah keluarga pernah memperoleh/mendengar/melihat/informasi program kependudukan, Keluarga Berencana dan Pembangunan Keluarga dari petugas?</th>
+        <th class="col-1" scope="col">Jika ya, darimana keluarga menerima informasi tersebut?</th>
         <th class="col-1" scope="col"></th>
         <th class="col-1" scope="col"></th>
         <th class="col-1" scope="col"></th>
@@ -99,6 +100,7 @@ if (!isset($_SESSION['login'])) {
           <td class="col-1"><?php echo ($data['status_remaja_ikut_binkel_keluarga'] == 1) ? 'Ya' : (($data['status_remaja_ikut_binkel_keluarga'] == 0) ? 'Tidak' : 'Data Error'); $data['status_remaja_ikut_binkel_keluarga'] ?></td>
           <td class="col-1"><?php echo ($data['status_remaja_ikut_pusatinformasi_konseling_keluarga'] == 1) ? 'Ya' : (($data['status_remaja_ikut_pusatinformasi_konseling_keluarga'] == 0) ? 'Tidak' : 'Data Error'); $data['status_remaja_ikut_pusatinformasi_konseling_keluarga'] ?></td>
           <td class="col-1"><?php echo ($data['status_lansia_ikut_binkel_keluarga'] == 1) ? 'Ya' : (($data['status_lansia_ikut_binkel_keluarga'] == 0) ? 'Tidak' : 'Data Error'); $data['status_lansia_ikut_binkel_keluarga'] ?></td>
+          <td class="col-1"><?php echo ($data['status_keluarga_ikut_usaha_ekonomi_keluarga'] == 1) ? 'Beton' : (($data['status_keluarga_ikut_usaha_ekonomi_keluarga'] == 2) ? 'Genteng' : (($data['status_keluarga_ikut_usaha_ekonomi_keluarga'] == 3) ? 'Asbes' : ((($data['status_keluarga_ikut_usaha_ekonomi_keluarga'] == 4) ? 'Kayu/Sirap' : "Data Error"))));?></td>
           <td class="col-1"><?php echo ($data['jenis_atap_rumah_keluarga'] == 1) ? 'Beton' : (($data['jenis_atap_rumah_keluarga'] == 2) ? 'Genteng' : (($data['jenis_atap_rumah_keluarga'] == 3) ? 'Asbes' : ((($data['jenis_atap_rumah_keluarga'] == 4) ? 'Kayu/Sirap' : ((($data['jenis_atap_rumah_keluarga'] == 5) ? 'Bambu' : ((($data['jenis_atap_rumah_keluarga'] == 6) ? 'Jerami/Ijuk/Daun-daunan' : ((($data['jenis_atap_rumah_keluarga'] == 7) ? 'Lainnya' : 'Data Error'))))))))));?></td>
           <td class="col-1"><?php echo ($data['jenis_dinding_keluarga'] == 1) ? 'Tembok' : (($data['jenis_dinding_keluarga'] == 2) ? 'Kayu/Papan' : (($data['jenis_dinding_keluarga'] == 3) ? 'Seng' : ((($data['jenis_dinding_keluarga'] == 4) ? 'Bambu' : ((($data['jenis_dinding_keluarga'] == 5) ? 'Lainnya' : 'Data Error')))))); ?></td>
           <td class="col-1"><?php echo ($data['jenis_lantai_keluarga'] == 1) ? 'Keramik/Marmer/Ubin/Tegel' : (($data['jenis_lantai_keluarga'] == 2) ? 'Semen' : (($data['jenis_lantai_keluarga'] == 3) ? 'Kayu/Papan' : ((($data['jenis_lantai_keluarga'] == 4) ? 'Bambu' : ((($data['jenis_lantai_keluarga'] == 5) ? 'Tanah' : ((($data['jenis_lantai_keluarga'] == 6) ? 'Lainnya' : 'Data Error'))))))));?></td>

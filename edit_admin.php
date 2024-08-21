@@ -62,11 +62,6 @@ if (!isset($_SESSION['login'])) {
                 </option>
             </select>
 
-
-
-
-
-
             <br>
             <input class="ml-96" type="submit" name="save" value="SAVE">
             <input class="ml-10" type="reset" name="reset" value="RESET">
