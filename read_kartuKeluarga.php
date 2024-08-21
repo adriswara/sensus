@@ -35,20 +35,20 @@ if (!isset($_SESSION['login'])) {
         <th class="col-1" scope="col">Status berekreasi keluar rumah</th>
         <th class="col-1" scope="col">Status keikutsertaan gotong royong pada lingkungan RT</th>
         <th class="col-1" scope="col">Status balita ikut posyandu</th>
-        <th class="col-1" scope="col">Status balita ikut bimbingan keluarga</th>
-        <th class="col-1" scope="col">status_remaja_ikut_binkel_keluarga</th>
+        <th class="col-1" scope="col">Status balita ikut bimbingan keluarga balita</th>
+        <th class="col-1" scope="col">status remaja ikut_bimbingan keluarga remaja</th>
         <th class="col-1" scope="col">status_remaja_ikut_pusatinformasi_konseling_keluarga</th>
-        <th class="col-1" scope="col">status_lansia_ikut_binkel_keluarga</th>
-        <th class="col-1" scope="col">jenis_atap_rumah_keluarga</th>
-        <th class="col-1" scope="col">jenis_dinding_keluarga</th>
-        <th class="col-1" scope="col">jenis_lantai_keluarga</th>
-        <th class="col-1" scope="col">sumber_penerangan_keluarga</th>
-        <th class="col-1" scope="col">sumber_air_keluarga</th>
-        <th class="col-1" scope="col">status_fasilitas_bab_keluarga</th>
-        <th class="col-1" scope="col">luas_rumah_mPersegi_keluarga</th>
-        <th class="col-1" scope="col">total_orang_menetap_dirumah_keluarga</th>
-        <th class="col-1" scope="col">bahan_bakar_utama_memasak_keluarga</th>
-        <th class="col-1" scope="col">kepemilikan_rumah_keluarga</th>
+        <th class="col-1" scope="col">status lansia ikut bimbingan keluarga lansia</th>
+        <th class="col-1" scope="col">jenis atap rumah keluarga</th>
+        <th class="col-1" scope="col">jenis dinding rumah keluarga</th>
+        <th class="col-1" scope="col">jenis lantai rumah keluarga</th>
+        <th class="col-1" scope="col">sumber penerangan utama rumah keluarga</th>
+        <th class="col-1" scope="col">sumber air utama rumah keluarga</th>
+        <th class="col-1" scope="col">status fasilitas bab rumah keluarga</th>
+        <th class="col-1" scope="col">luas rumah keluarga m(2)</th>
+        <th class="col-1" scope="col">total orang menetap dirumah keluarga</th>
+        <th class="col-1" scope="col">bahan bakar utama untuk memasak di rumah keluarga</th>
+        <th class="col-1" scope="col">status kepemilikan rumah keluarga</th>
         <th class="col-1" scope="col">status_perolehan_info_kb_keluarga</th>
         <th class="col-1" scope="col">asal_perolehan_info_kb_keluarga</th>
         <th class="col-1" scope="col">status_petugas_asal_informasi_kb_keluarga</th>
