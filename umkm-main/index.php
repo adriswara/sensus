@@ -63,13 +63,7 @@ $items = $stmt->fetchAll();
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informasi Kelurahan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informasi Warga</a>
+                        <a class="nav-link" href="../">Aplikasi Sensus</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">UMKM</a>

@@ -42,7 +42,7 @@ if (!isset($_SESSION['login'])) {
             <p><br><label class="mr-5 mb-3">NIK Kartu Keluarga</label></p>
 
             <input class="form-control" style="border-width: 1px; border-color: black;" type="number"
-                name="nik_keluarga" value="<?= $data['nik_keluarga'] ?>" required>
+                name="nik_keluarga" value="<?= $data['nik_keluarga'] ?>" readonly="readonly" required>
 
 
             <!-- endform -->

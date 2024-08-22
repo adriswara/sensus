@@ -20,63 +20,79 @@ foreach ($dataAdmin as $data):
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
 
-  <div class="col">
-    <div class="card shadow-sm">
-      <a href="read_artikel.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-          src="img/article.png" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#55595c" /></img>
+  <?php
+  if (($data['admin_type'] != 0)) {
+    echo "
+  <div class='col'>
+    <div class='card shadow-sm'>
+      <a href='read_artikel.php'> <img class='bd-placeholder-img card-img-top' width='100%' height='225'
+          src='img/article.png' preserveAspectRatio='xMidYMid slice' focusable='false'>
+        <rect width='100%' height='100%' fill='#55595c' /></img>
       </a>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+      <div class='card-body'>
+        <p class='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content.
           This content is a little bit longer.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <a href="read_artikel.php"><button type="button" class="btn btn-sm btn-outline-secondary">Artikel
+        <div class='d-flex justify-content-between align-items-center'>
+          <div class='btn-group'>
+            <a href='read_artikel.php'><button type='button' class='btn btn-sm btn-outline-secondary'>Artikel
                 List</button></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card shadow-sm">
-      <a href="read_kartuKeluarga.php"> <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-          src="img/citizen.png" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="#55595c" /></img>
+  </div>";
+  }
+  ?>
+
+  <?php
+  if (($data['admin_type'] != 1)) {
+    echo " <div class='col'>
+    <div class='card shadow-sm'>
+      <a href='read_kartuKeluarga.php'> <img class='bd-placeholder-img card-img-top' width='100%' height='225'
+          src='img/citizen.png' preserveAspectRatio='xMidYMid slice' focusable='false'>
+        <rect width='100%' height='100%' fill='#55595c' /></img>
       </a>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+      <div class='card-body'>
+        <p class='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content.
           This content is a little bit longer.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <a href="read_kartuKeluarga.php"><button type="button" class="btn btn-sm btn-outline-secondary">Sensus
+        <div class='d-flex justify-content-between align-items-center'>
+          <div class='btn-group'>
+            <a href='read_kartuKeluarga.php'><button type='button' class='btn btn-sm btn-outline-secondary'>Sensus
                 List</button></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div>";
+  }
+  ?>
 
 
-  <div class="col">
-    <div class="card shadow-sm">
-      <a href="read_admin.php"><img class="bd-placeholder-img card-img-top" width="100%" height="225"
-          src="img/admin2.png" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice"
-          focusable="false">
-        <rect width="100%" height="100%" fill="#55595c" /></img>
+
+  <?php
+  if (($data['admin_type'] == 2)) {
+    echo "<div class='col'>
+    <div class='card shadow-sm'>
+      <a href='read_admin.php'><img class='bd-placeholder-img card-img-top' width='100%' height='225'
+          src='img/admin2.png' role='img' aria-label='Placeholder: ' preserveAspectRatio='xMidYMid slice'
+          focusable='false'>
+        <rect width='100%' height='100%' fill='#55595c' /></img>
       </a>
-      <div class="card-body">
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+      <div class='card-body'>
+        <p class='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content.
           This content is a little bit longer.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <a href="read_admin.php"><button type="button" class="btn btn-sm btn-outline-secondary">Admin
+        <div class='d-flex justify-content-between align-items-center'>
+          <div class='btn-group'>
+            <a href='read_admin.php'><button type='button' class='btn btn-sm btn-outline-secondary'>Admin
                 Setting</button></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div>";
+  }
+  ?>
+
 </div>
 
 <!-- Dashboard -->
