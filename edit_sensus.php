@@ -158,7 +158,7 @@ if (!isset($_SESSION['login'])) {
                 </option>
                 <option value="2" <?= ($data['pekerjaanKeluarga_warga'] == '2') ? 'selected' : ''; ?>>Petani
                 </option>
-                <option value="3" <?= ($data['pekerjaanKeluarga_warga'] == '3') ? 'selected' : ''; ?>>Nemayan
+                <option value="3" <?= ($data['pekerjaanKeluarga_warga'] == '3') ? 'selected' : ''; ?>>Nelayan
                 </option>
                 <option value="4" <?= ($data['pekerjaanKeluarga_warga'] == '4') ? 'selected' : ''; ?>>Pedagang
                 </option>

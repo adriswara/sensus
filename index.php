@@ -118,7 +118,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <?php
                     include "connection.php";
-                    $queryUMKM = "  SELECT COUNT(id_warga) as angkaUMKM FROM `warga` WHERE pekerjaanKeluarga_warga like '%umkm%'; ";
+                    $queryUMKM = "  SELECT COUNT(id_warga) as angkaUMKM FROM `warga` WHERE pekerjaanKeluarga_warga = '4'; ";
                     $umkm = mysqli_query($db_connection, $queryUMKM);
                     $i = 1;
                     foreach ($umkm as $data):

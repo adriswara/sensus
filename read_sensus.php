@@ -32,10 +32,9 @@ if (!isset($_SESSION['login'])) {
         <th class="col-1" scope="col">Pekerjaan Keluarga</th>
         <th class="col-1" scope="col">Pendidikan</th>
         <th class="col-1" scope="col">Kepemilikan Rumah</th>
-        <th class="col-1">nomor anggota</th>
-        <th class="col-1">keberadaan anggota keluarga</th>
-        <th class="col-1">kepemilikan akte kelahiran</th>
-        <th class="col-1">kepesertaan jkn warga</th>
+        <th class="col-1" scope="col">keberadaan anggota keluarga</th>
+        <th class="col-1" scope="col">kepemilikan akte kelahiran</th>
+        <th class="col-1" scope="col">kepesertaan jkn warga</th>
         <th class="col-1" scope="col"></th>
         <th class="col-1" scope="col"></th>
 
@@ -65,13 +64,12 @@ if (!isset($_SESSION['login'])) {
           <td class="col-1"><?php echo $data['rw_warga'] ?></td>
           <td class="col-1"><?php echo $data['tglLahir_warga'] ?></td>
           <td class="col-1"><?php echo $data['tempatLahir_warga'] ?></td>
-          <td class="col-1"><?php echo $data['agama_warga'] ?></td>
+          <td class="col-1"><?php echo ($data['agama_warga'] == 1) ? 'Islam' : (($data['agama_warga'] == 2) ? 'Kristen' : (($data['agama_warga'] == 3) ? 'Katholik' : ((($data['agama_warga'] == 4) ? 'Hindu' : ((($data['agama_warga'] == 5) ? 'Budha' : ((($data['agama_warga'] == 6) ? 'Khonghucu' : ((($data['agama_warga'] == 7) ? 'Penghayat Kepercayaan' : 'Data Error'))))))))));?></td>
           <td class="col-1"><?php echo ($data['statusPerkawinan_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
-          <td class="col-1"><?php echo $data['hubunganKeluarga_warga'] ?></td>
-          <td class="col-1"><?php echo $data['pekerjaanKeluarga_warga'] ?></td>
-          <td class="col-1"><?php echo $data['pendidikan_warga'] ?></td>
+          <td class="col-1"><?php echo ($data['hubunganKeluarga_warga'] == 1) ? 'Kepala Keluarga' : (($data['hubunganKeluarga_warga'] == 2) ? 'Istri' : (($data['hubunganKeluarga_warga'] == 3) ? 'Anak' : ((($data['hubunganKeluarga_warga'] == 4) ? 'Lainnya' : 'Data Error')))); ?></td>
+          <td class="col-1"><?php echo ($data['pekerjaanKeluarga_warga'] == 1) ? 'Tidak/Belum Bekerja' : (($data['pekerjaanKeluarga_warga'] == 2) ? 'Petani' : (($data['pekerjaanKeluarga_warga'] == 3) ? 'Nelayan' : ((($data['pekerjaanKeluarga_warga'] == 4) ? 'Pedagang' : ((($data['pekerjaanKeluarga_warga'] == 5) ? 'Pejabat Negara' : ((($data['pekerjaanKeluarga_warga'] == 6) ? 'PNS/TNI/POLRI' : ((($data['pekerjaanKeluarga_warga'] == 7) ? 'Pegawai Swasta' : (($data['pekerjaanKeluarga_warga'] == 8) ? 'Wiraswasta' : (($data['pekerjaanKeluarga_warga'] == 9) ? 'Pensiunan': (($data['pekerjaanKeluarga_warga'] == 10) ? 'Pekerja Lepas' : 'Data Error'))))))))))))); ?></td>
+          <td class="col-1"><?php echo ($data['pendidikan_warga'] == 1) ? 'Tidak/Belum Sekolah' : (($data['pendidikan_warga'] == 2) ? 'Tdk Tamat SD/Sederajat' : (($data['pendidikan_warga'] == 3) ? 'Masih SD/Sederajat' : ((($data['pendidikan_warga'] == 4) ? 'Tamat SD/Sederajat' : ((($data['pendidikan_warga'] == 5) ? 'Masih SLTP/Sederajat' : ((($data['pendidikan_warga'] == 6) ? 'Tamat SLTP/Sederajat' : ((($data['pendidikan_warga'] == 7) ? 'Masih SLTA/Sederajat' : (($data['pendidikan_warga'] == 8) ? 'Tamat SLTA/Sederajat' : (($data['pendidikan_warga'] == 9) ? 'Masih PT/Sederajat': (($data['pendidikan_warga'] == 10) ? 'Tamat PT/Sederajat' : 'Data Error'))))))))))))); ?></td>
           <td class="col-1"><?php echo ($data['kepemilikanRumah_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
-          <td class="col-1"><?php echo $data['hubunganKeluarga_warga'] ?></td>
           <td class="col-1"><?php echo ($data['keberadaan_anggota_keluarga_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
           <td class="col-1"><?php echo ($data['kepemilikan_akta_kelahiran_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>
           <td class="col-1"><?php echo ($data['kepesertaan_jkn_warga']) == 0 ? 'Tidak' : 'Iya' ?></td>

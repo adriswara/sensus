@@ -18,15 +18,15 @@
             <h5>Contacts</h5>
                 <dl class="contact-list">
                     <dt>Alamat:</dt>
-                    <dd>Jl. Laswi 131/262 Manggahang Baleendah</dd>
+                    <dd>Jl. Kawungsari Rancamanuk Kode Pos 40375</dd>
                 </dl>
                 <dl class="contact-list">
                     <dt>Instagram:</dt>
-                    <dd><a href="mailto:#">Instagram @mekarapitan </a></dd>
+                    <dd><a href="mailto:#">Instagram @kelurahan_wargamekar </a></dd>
                 </dl>
                 <dl class="contact-list">
                     <dt>No Telefon:</dt>
-                    <dd><a href="tel:#">+628xxxxxxxx</a>
+                    <dd><a href="tel:#">Tlp. 022-85963457</a>
                     </dd>
                 </dl>
             </div>
