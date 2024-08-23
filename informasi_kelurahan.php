@@ -19,6 +19,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">RT</th>
+                <th scope="col">RW</th>
                 <th scope="col">Total Jiwa</th>
             </tr>
         </thead>
@@ -26,7 +27,7 @@
 
         <?php
         include "connection.php";
-        $queryJiwaPerRT = " SELECT COUNT(id_warga) as total, rt_warga FROM `warga` GROUP by rt_warga; ";
+        $queryJiwaPerRT = "  SELECT COUNT(id_warga) as total, rt_warga, rw_warga FROM `warga` GROUP by rt_warga, rw_warga ";
         $jiwaPerRT = mysqli_query($db_connection, $queryJiwaPerRT);
 
         $i = 1;
@@ -37,6 +38,7 @@
                 <tr>
                     <th scope="row"><?php echo $i++; ?></th>
                     <td><?php echo $data['rt_warga'] ?></td>
+                    <td><?php echo $data['rw_warga'] ?></td>
                     <td><?php echo $data['total'] ?></td>
                 </tr>
             </tbody>
